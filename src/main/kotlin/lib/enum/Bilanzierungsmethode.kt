@@ -1,5 +1,10 @@
 package de.progresslab.bo4e.lib.enum
 
+/**
+ * Mit dieser Aufzählung kann zwischen den Bilanzierungsmethoden bzw. -Grundlagen unterschieden werden.
+ *
+ * veröffentlicht am 17. Januar 2018
+ */
 enum class Bilanzierungsmethode(val beschreibung: String) {
     RLM("Registrierende Leistungsmessung"),
     SLP("Standard Lastprofil"),

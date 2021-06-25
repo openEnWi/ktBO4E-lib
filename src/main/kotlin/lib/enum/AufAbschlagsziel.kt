@@ -1,5 +1,10 @@
 package de.progresslab.bo4e.lib.enum
 
+/**
+ * Der Preis, auf den sich ein Auf- oder Abschlag bezieht.
+ *
+ * veröffentlicht am 30. Mai 2018
+ */
 enum class AufAbschlagsziel(val beschreibung: String) {
     ARBEITSPREIS_EINTARIF("Auf/Abschlag auf den Arbeitspreis Eintarif"),
     ARBEITSPREIS_HT("ARBEITSPREIS_HT Auf/Abschlag auf den Arbeitspreis HT"),

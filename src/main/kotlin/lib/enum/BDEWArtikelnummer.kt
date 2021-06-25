@@ -1,5 +1,8 @@
 package de.progresslab.bo4e.lib.enum
 
+/**
+ * veröffentlicht am 11. April 2018
+ */
 enum class BDEWArtikelnummer(val bdewArtikelnummer: String, val beschreibung: String) {
     LEISTUNG("9990001000053", "Leistung"),
     LEISTUNG_PAUSCHAL("9990001000079", "Leistung pauschal"),

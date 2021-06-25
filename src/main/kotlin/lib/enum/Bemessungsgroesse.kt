@@ -1,5 +1,10 @@
 package de.progresslab.bo4e.lib.enum
 
+/**
+ * Zur Abbildung von Messgrössen und zur Verwendung in energiewirtschaftlichen Berechnungen.
+ *
+ * veröffentlicht am 11. April 2018
+ */
 enum class Bemessungsgroesse(val beschreibung: String) {
     WIRKARBEIT_EL("elektrische Wirkarbeit"),
     LEISTUNG_EL("elektrische Leistung"),
