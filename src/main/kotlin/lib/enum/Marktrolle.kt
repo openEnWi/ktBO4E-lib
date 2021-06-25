@@ -1,6 +1,6 @@
 package de.progresslab.bo4e.lib.enum
 
-enum class Marktrolle(val rollenbezeichnung: String) {
+enum class Marktrolle(val beschreibung: String) {
     NB("Netzbetreiber"),
     LF("Lieferant"),
     MSB("Messstellenbetreiber"),
