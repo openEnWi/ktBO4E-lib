@@ -28,7 +28,9 @@ enum class Geraetetyp(val beschreibung: String) {
     DATENLOGGER("Datenlogger"),
     KOMMUNIKATIONSANSCHLUSS("Kommunikationsanschluss"),
     MODEM("Modem"),
-    TELEKOMMUNIKATIONSEINRICHTUNG("vom Messstellenbetreiber beigestellte Telekommunikationseinrichtung (Telefonanschluss)"),
+    TELEKOMMUNIKATIONSEINRICHTUNG(
+        "vom Messstellenbetreiber beigestellte Telekommunikationseinrichtung (Telefonanschluss)"
+    ),
     DREHKOLBENGASZAEHLER("Drehkolbengaszähler"),
     TURBINENRADGASZAEHLER("Turbinenradgaszähler"),
     ULTRASCHALLZAEHLER("Ultraschallzähler"),
