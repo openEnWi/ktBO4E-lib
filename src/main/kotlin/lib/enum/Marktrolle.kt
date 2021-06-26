@@ -1,5 +1,10 @@
 package de.progresslab.bo4e.lib.enum
 
+/**
+ * Diese Rollen kann ein Marktteilnehmer einnehmen.
+ *
+ * veröffentlicht am 17. Januar 2018
+ */
 enum class Marktrolle(val beschreibung: String) {
     NB("Netzbetreiber"),
     LF("Lieferant"),

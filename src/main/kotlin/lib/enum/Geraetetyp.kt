@@ -49,6 +49,6 @@ enum class Geraetetyp(val beschreibung: String) {
     SONSTIGES_GERAET("Sonstiges Gerät"),
     PREPAYMENTZAEHLER("Prepaymentzähler"),
     EDL_21("EDL21"),
-    ZAEHLER_96_H("96 h Zähler"), // renamed from 96_H_ZAEHLER TODO: compatiblity with other implementations
+    ZAEHLER_96_H("96 h Zähler"), // Abweichung von BO4E
     EDL_40_ZAEHLERAUFSATZ("EDL 40 Zähleraufsatz für Zähler")
 }
