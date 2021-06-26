@@ -16,7 +16,10 @@ enum class BDEWArtikelnummer(val bdewArtikelnummer: String, val beschreibung: St
     ZUSAETZLICHE_ABLESUNG("9990001000186", "Zusätzliche Ablesung"),
     PRUEFGEBUEHREN_AUSSERPLANMAESSIG("9990001000219", "Prüfgebühren (außerplanmäßig)"),
     WIRKARBEIT("9990001000269", "Wirkarbeit"),
-    SINGULAER_GENUTZTE_BETRIEBSMITTEL("9990001000285", "singulär genutzte Betriebsmittel (z. B. Trafomiete, Leitungen)"),
+    SINGULAER_GENUTZTE_BETRIEBSMITTEL(
+        "9990001000285",
+        "singulär genutzte Betriebsmittel (z. B. Trafomiete, Leitungen)"
+    ),
     ABGABE_KWKG("9990001000334", "Abgabe KWKG"),
     ABSCHLAG("9990001000376", "Abschlag"),
     KONZESSIONSABGABE("9990001000417", "Konzessionsabgabe"),
@@ -31,7 +34,10 @@ enum class BDEWArtikelnummer(val bdewArtikelnummer: String, val beschreibung: St
     INKASSOKOSTEN("9990001000582", "Inkassokosten"),
     BLINDMEHRLEISTUNG("9990001000590", "Blindmehrleistung"),
     ENTGELT_MESSUNG_ABLESUNG("9990001000615", "Entgelt für Messung und Ablesung"),
-    ENTGELT_EINBAU_BETRIEB_WARTUNG_MESSTECHNIK("9990001000623", "Entgelt für Einbau, Betrieb und Wartung der Messtechnik"),
+    ENTGELT_EINBAU_BETRIEB_WARTUNG_MESSTECHNIK(
+        "9990001000623",
+        "Entgelt für Einbau, Betrieb und Wartung der Messtechnik"
+    ),
     AUSGLEICHSENERGIE("9990001000631", "Ausgleichsenergie"),
     ZAEHLEINRICHTUNG("9990001000649", "Zähleinrichtung"),
     WANDLER_MENGENUMWERTER("9990001000657", "Wandler/Mengenumwerter"),
