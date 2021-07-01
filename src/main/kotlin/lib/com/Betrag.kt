@@ -9,5 +9,7 @@ import java.math.BigDecimal
  * Die Einheit ist dabei immer die Hauptwährung also Euro, Dollar etc..
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see "https://www.bo4e.de/dokumentation/komponenten/com-betrag"
  */
 data class Betrag(val wert: BigDecimal, val waehrung: Waehrungscode)
