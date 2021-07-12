@@ -1,3 +1,3 @@
 
-rootProject.name = "bo4e-lib"
+rootProject.name = "openenwi.bo4e.lib"
 

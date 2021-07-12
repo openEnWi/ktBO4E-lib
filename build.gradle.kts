@@ -5,7 +5,7 @@ plugins {
     application
 }
 
-group = "de.progresslab.bo4e"
+group = "openenwi.bo4e"
 version = "1.0-SNAPSHOT"
 
 repositories {
