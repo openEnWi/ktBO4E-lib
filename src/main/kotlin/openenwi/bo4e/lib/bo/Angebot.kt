@@ -27,4 +27,4 @@ data class Angebot(
     val unterzeichnerAngebotsnehmer: Ansprechpartner?,
     val unterzeichnerAngebotsgeber: Ansprechpartner?,
     val varianten: Set<Angebotsvariante>
-): Geschaeftsobjekt(boTyp = BOTyp.ANGEBOT)
+) : Geschaeftsobjekt(boTyp = BOTyp.ANGEBOT)
