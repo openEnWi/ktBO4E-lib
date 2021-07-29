@@ -28,5 +28,8 @@ enum class BOTyp {
     NETZNUTZUNGSRECHNUNG,
     TARIFPREISBLATT,
     REGIONALTARIF,
-    ZEITREIHE
+    ZEITREIHE,
+    // Nicht im Standard:
+    LASTGANG,
+    LASTGANGKOMPAKT,
 }
