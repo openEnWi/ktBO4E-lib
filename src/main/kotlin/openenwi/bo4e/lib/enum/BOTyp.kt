@@ -32,4 +32,5 @@ enum class BOTyp {
     // Nicht im Standard:
     LASTGANG,
     LASTGANGKOMPAKT,
+    REGION
 }
