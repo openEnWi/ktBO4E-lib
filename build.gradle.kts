@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.20"
+    kotlin("jvm") version "1.5.30"
+    id("org.jetbrains.dokka") version "1.5.0"
     application
 }
 
@@ -13,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.5.0")
     testImplementation(kotlin("test"))
 }
 
