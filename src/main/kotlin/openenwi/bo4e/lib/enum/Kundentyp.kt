@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung der Typen von Endkunden. Daraus kann das Verbrauchsprofil abgeleitet werden.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Kundentyp](https://www.bo4e.de/dokumentation/enumerations/enum-kundentyp)
  */
 enum class Kundentyp(val beschreibung: String) {
     GEWERBE("Gewerbekunden"),

@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung möglicher Einheiten zur Verwendung in zeitbezogenen Angaben.
  *
  * veröffentlicht am 28. Februar 2018
+ *
+ * @see [ENUM Zeiteinheit](https://www.bo4e.de/dokumentation/enumerations/enum-zeiteinheit  )
  */
 enum class Zeiteinheit(val beschreibung: String) {
     SEKUNDE("Sekunde"),

@@ -7,7 +7,7 @@ import java.math.BigDecimal
 /**
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tarifberechnungsparameter"
+ * @see [COM Tarifberechnungsparameter](https://www.bo4e.de/dokumentation/komponenten/com-tarifberechnungsparameter)
  */
 data class Tarifberechnungsparameter(
     val berechnungsmethode: Tarifkalkulationsmethode?,

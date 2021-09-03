@@ -8,6 +8,6 @@ import openenwi.bo4e.lib.enum.Geraetetyp
  *
  * veröffentlicht am 18. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-geraeteeigenschaften"
+ * @see [COM Geraeteeigenschaften](https://www.bo4e.de/dokumentation/komponenten/com-geraeteeigenschaften)
  */
 data class Geraeteeigenschaften(val geraetetyp: Geraetetyp, val geraetemerkmal: Geraetemerkmal)

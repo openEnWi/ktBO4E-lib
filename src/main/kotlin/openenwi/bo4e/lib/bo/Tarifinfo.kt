@@ -11,7 +11,7 @@ import openenwi.bo4e.lib.enum.*
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-tarifinfo"
+ * @see [BO Tarifinfo](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-tarifinfo)
  */
 data class Tarifinfo(
     val bezeichnung: String,

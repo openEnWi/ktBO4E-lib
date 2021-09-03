@@ -7,7 +7,7 @@ import openenwi.bo4e.lib.enum.Preisgarantietyp
  *
  * veröffentlicht am 20. Juni 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-regionalepreisgarantie"
+ * @see [COM RegionalePreisgarantie](https://www.bo4e.de/dokumentation/komponenten/com-regionalepreisgarantie)
  *
  * @see Preisgarantie
  */

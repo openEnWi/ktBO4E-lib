@@ -9,7 +9,7 @@ import openenwi.bo4e.lib.enum.Zaehlertyp
  *
  * veröffentlicht am 13. März 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-ausschreibungsdetail"
+ * @see [COM Ausschreibungsdetail](https://www.bo4e.de/dokumentation/komponenten/com-ausschreibungsdetail)
  */
 data class Ausschreibungsdetail(
     val lokationsId: String,

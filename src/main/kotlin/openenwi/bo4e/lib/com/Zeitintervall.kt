@@ -8,7 +8,7 @@ import openenwi.bo4e.lib.enum.Zeiteinheit
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-zeitintervall"
+ * @see [COM Zeitintervall](https://www.bo4e.de/dokumentation/komponenten/com-zeitintervall)
  */
 data class Zeitintervall(
     val wert: Int,

@@ -7,6 +7,8 @@ import openenwi.bo4e.lib.enum.Medium.GAS
  * Festlegung, welcher Typ von Messung mit einem Preis belegt wird.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Messpreistyp](https://www.bo4e.de/dokumentation/enumerations/enum-messpreistyp)
  */
 enum class Messpreistyp(val beschreibung: String, val medium: Medium) {
     MESSPREIS_G2_5("Messpreis_G2,5", GAS),

@@ -10,6 +10,8 @@ import openenwi.bo4e.lib.bo.Marktlokation
  * Eine Variante besteht mindestens aus einem Angebotsteil.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [COM Angebotsteil](https://www.bo4e.de/dokumentation/komponenten/com-angebotsteil)
  */
 data class Angebotsteil(
     val anfrageSubreferenz: String?,

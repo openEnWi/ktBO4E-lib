@@ -15,6 +15,8 @@ import openenwi.bo4e.lib.enum.Kontaktart
  * Hier sollte daher keine Zuordnung zu Marktrollen erfolgen.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [BO Geschaeftspartner](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-geschaftspartner)
  */
 data class Geschaeftspartner(
     val anrede: Anrede?,

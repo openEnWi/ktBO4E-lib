@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Diese Rollen kann ein Marktteilnehmer einnehmen.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [ENUM Marktrolle](https://www.bo4e.de/dokumentation/enumerations/enum-marktrolle)
  */
 enum class Marktrolle(val beschreibung: String) {
     NB("Netzbetreiber"),

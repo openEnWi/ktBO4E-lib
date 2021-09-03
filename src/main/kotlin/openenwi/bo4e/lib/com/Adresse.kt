@@ -6,6 +6,8 @@ import openenwi.bo4e.lib.enum.Landescode
  * Enthält eine Adresse, die für die meisten Zwecke verwendbar ist.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [COM Adresse](https://www.bo4e.de/dokumentation/komponenten/com-adresse)
  */
 data class Adresse(
     val postleitzahl: Int,

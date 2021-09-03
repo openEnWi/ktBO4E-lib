@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aufzählung der Währungscodes.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [ENUM Waehrungscode](https://www.bo4e.de/dokumentation/enumerations/enum-wahrungscode)
  */
 enum class Waehrungscode(val beschreibung: String) {
     AED("UAE Dirham"),

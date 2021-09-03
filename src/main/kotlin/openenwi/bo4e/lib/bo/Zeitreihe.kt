@@ -9,7 +9,7 @@ import openenwi.bo4e.lib.enum.*
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-zeitreihe"
+ * @see [BO Zeitreihe](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-zeitreihe)
  */
 data class Zeitreihe(
     val bezeichnung: String,

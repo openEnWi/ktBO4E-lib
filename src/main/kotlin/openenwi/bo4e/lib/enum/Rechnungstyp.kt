@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Abbildung verschiedener Rechnungstypen zur Kennzeichnung von Rechnungen
  * 
  * veröffentlicht am 06. Juni 2018
+ *
+ * @see [ENUM Rechnungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-rechnungstyp)
  */
 enum class Rechnungstyp(val beschreibung: String) {
     ENDKUNDENRECHNUNG("Eine Rechnung vom Lieferanten an einen Endkunden über die Lieferung von Energie."),	

@@ -7,6 +7,8 @@ import openenwi.bo4e.lib.enum.Sparte.STROM
  * Eine Aufzählung zur Einordnung für die Höhe der Konzessionsabgabe.
  *
  * veröffentlicht am 08. Mai 2018
+ *
+ * @see [ENUM KundengruppeKA](https://www.bo4e.de/dokumentation/enumerations/enum-kundengruppeka)
  */
 enum class KundengruppeKA(val beschreibung: String, val sparten: Set<Sparte>) {
     S_SCHWACHLAST("Schwachlast-Kunde", setOf(STROM)),

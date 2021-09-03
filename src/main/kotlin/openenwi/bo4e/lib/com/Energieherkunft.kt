@@ -6,7 +6,7 @@ import java.math.BigDecimal
 /**
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-energieherkunft"
+ * @see [COM Energieherkunft(https://www.bo4e.de/dokumentation/komponenten/com-energieherkunft)
  *
  * @property erzeugungsart Art der Erzeugung der Energie.
  * @property anteilProzent Prozentualer Anteil der jeweiligen Erzeugungsart.

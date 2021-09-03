@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aufzählung der unterstützten Ausschreibungsportale.
  *
  * veröffentlicht am 28. Februar 2018
+ *
+ * @see [ENUM Ausschreibungsportal](https://www.bo4e.de/dokumentation/enumerations/enum-ausschreibungsportal)
  */
 enum class Ausschreibungsportal(val beschreibung: String) {
     ENPORTAL("enPORTAL"),

@@ -5,7 +5,7 @@ package openenwi.bo4e.lib.enum
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/enumerations/enum-landescode"
+ * @see [ENUM Landescode](https://www.bo4e.de/dokumentation/enumerations/enum-landescode)
  */
 enum class Landescode(val beschreibung: String, val alpha3Code: String, val countryCode: Int) {
     AT("Austria", "AUT", 40),

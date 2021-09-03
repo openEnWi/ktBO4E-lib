@@ -7,7 +7,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-regionalepreisstaffel"
+ * @see [COM RegionalePreisstaffel](https://www.bo4e.de/dokumentation/komponenten/com-regionalepreisstaffel)
  */
 data class RegionalePreisstaffel(
     val einheitspreis: BigDecimal,

@@ -8,7 +8,7 @@ import openenwi.bo4e.lib.enum.BOTyp
  *
  * veröffentlicht am 22. August 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-region"
+ * @see [BO Region](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-region)
  */
 data class Region(
     val bezeichnung: String,

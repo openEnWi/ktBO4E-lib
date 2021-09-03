@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung der Erzeugungsarten von Energie.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Erzeugungsart](https://www.bo4e.de/dokumentation/enumerations/enum-erzeugungsart/enum-erzeugungsart-1)
  */
 enum class Erzeugungsart(val beschreibung: String) {
     FOSSIL("Fossile Brennstoffe"),

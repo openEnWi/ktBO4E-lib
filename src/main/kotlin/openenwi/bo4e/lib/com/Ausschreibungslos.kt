@@ -10,7 +10,7 @@ import openenwi.bo4e.lib.enum.Vertragsform
  *
  * veröffentlicht am 28. Februar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-ausschreibungslos"
+ * @see [COM Ausschreibungslos](https://www.bo4e.de/dokumentation/komponenten/com-ausschreibungslos)
  */
 data class Ausschreibungslos(
     val losnummer: String,

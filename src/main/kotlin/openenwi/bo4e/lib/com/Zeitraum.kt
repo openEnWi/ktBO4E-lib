@@ -14,6 +14,8 @@ import java.time.ZonedDateTime
  * - Zeitraum: Startzeitpunkt (Datum und Uhrzeit) bis Endzeitpunkt (Datum und Uhrzeit)
  *
  * veröffentlicht am 28. Februar 2018
+ *
+ * @see [COM Zeitraum](https://www.bo4e.de/dokumentation/komponenten/com-zeitraum)
  */
 data class Zeitraum(
     val einheit: Zeiteinheit,

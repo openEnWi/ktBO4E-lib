@@ -10,6 +10,6 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-betrag"
+ * @see [COM Betrag](https://www.bo4e.de/dokumentation/komponenten/com-betrag)
  */
 data class Betrag(val wert: BigDecimal, val waehrung: Waehrungscode)

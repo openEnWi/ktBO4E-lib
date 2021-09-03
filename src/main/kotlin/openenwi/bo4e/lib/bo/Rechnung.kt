@@ -15,7 +15,7 @@ import java.time.LocalDate
  *
  * veröffentlicht am 06. Juni 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-rechnung"
+ * @see [BO Rechnung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-rechnung)
  */
 data class Rechnung(
     val rechnungstitel: String?,

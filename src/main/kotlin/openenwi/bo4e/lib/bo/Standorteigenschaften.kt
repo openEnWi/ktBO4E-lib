@@ -10,7 +10,7 @@ import openenwi.bo4e.lib.enum.BOTyp
  *
  * veröffentlicht am 03. Juli 2019
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-standorteigenschaften"
+ * @see [BO Standorteigenschaften](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-standorteigenschaften)
  */
 data class Standorteigenschaften(
     val eigenschaftenAllgemein: StandorteigenschaftenAllgemein,

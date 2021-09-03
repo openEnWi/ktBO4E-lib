@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aufschlüsselung der Preistypen in Tarifen.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Preistyp](https://www.bo4e.de/dokumentation/enumerations/enum-preistyp)
  */
 enum class Preistyp(val beschreibung: String) {
     GRUNDPREIS("Grundpreis"),

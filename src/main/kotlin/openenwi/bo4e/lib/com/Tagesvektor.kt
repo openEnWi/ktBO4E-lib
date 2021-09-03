@@ -7,7 +7,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tagesvektor"
+ * @see [COM Tagesvektor](https://www.bo4e.de/dokumentation/komponenten/com-tagesvektor)
  */
 data class Tagesvektor(
     val tag: ZonedDateTime,

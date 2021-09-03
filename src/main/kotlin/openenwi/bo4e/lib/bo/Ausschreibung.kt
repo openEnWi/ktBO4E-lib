@@ -14,7 +14,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 27. Juni 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ausschreibung"
+ * @see [BO Ausschreibung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ausschreibung)
  */
 data class Ausschreibung(
     val ausschreibungsnummer: String,

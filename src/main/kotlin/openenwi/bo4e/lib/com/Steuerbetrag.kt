@@ -9,7 +9,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 06. Juni 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-steuerbetrag"
+ * @see [COM Steuerbetrag](https://www.bo4e.de/dokumentation/komponenten/com-steuerbetrag)
  */
 data class Steuerbetrag(
     val steuerkennzeichen: Steuerkennzeichen,

@@ -8,7 +8,7 @@ import openenwi.bo4e.lib.enum.Regionskriteriumtyp
  *
  * veröffentlicht am 22. August 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-regionskriterium"
+ * @see [COM Regionskriterium](https://www.bo4e.de/dokumentation/komponenten/com-regionskriterium)
  */
 data class Regionskriterium(
     val gueltigkeitstyp: Gueltigkeitstyp,

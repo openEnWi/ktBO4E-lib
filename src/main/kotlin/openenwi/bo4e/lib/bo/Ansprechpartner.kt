@@ -12,7 +12,7 @@ import openenwi.bo4e.lib.enum.Titel
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ansprechpartner"
+ * @see [BO Ansprechpartner](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ansprechpartner)
  */
 data class Ansprechpartner(
     val anrede: Anrede?,

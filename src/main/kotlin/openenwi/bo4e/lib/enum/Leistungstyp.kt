@@ -5,6 +5,8 @@ package openenwi.bo4e.lib.enum
  *
  * Version 1.2
  * veröffentlicht am 31. Mai 2021
+ *
+ * @see [ENUM Leistungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-leistungstyp/31-05-2021)
  */
 enum class Leistungstyp(val beschreibung: String) {
     ARBEITSPREIS_WIRKARBEIT("Arbeitspreis zur Abrechnung der Wirkarbeit"),

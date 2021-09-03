@@ -7,7 +7,7 @@ import java.time.LocalDate
  *
  * veröffentlicht am 03. Juli 2019
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-fremdkostenposition"
+ * @see [COM Fremdkostenposition](https://www.bo4e.de/dokumentation/komponenten/com-fremdkostenposition)
  */
 data class Fremdkostenposition(
     val positionstitel: String,

@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Voraussetzungen, die erfüllt sein müssen, damit dieser Tarif zur Anwendung kommen kann.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Voraussetzungen](https://www.bo4e.de/dokumentation/enumerations/enum-voraussetzungen)
  */
 enum class Voraussetzungen(val beschreibung: String) {
     EINZUGSERMAECHTIGUNG("Einzugsermaechtigung"), // 3

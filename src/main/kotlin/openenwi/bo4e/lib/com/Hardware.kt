@@ -7,7 +7,7 @@ import openenwi.bo4e.lib.enum.Geraetetyp
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-hardware"
+ * @see [COM Hardware]https://www.bo4e.de/dokumentation/komponenten/com-hardware)
  */
 data class Hardware(
     val geraetetyp: Geraetetyp,

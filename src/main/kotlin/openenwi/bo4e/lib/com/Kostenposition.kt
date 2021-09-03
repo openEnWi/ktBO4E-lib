@@ -7,7 +7,7 @@ import java.time.LocalDate
  *
  * veröffentlicht am 11. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-kostenposition"
+ * @see [COM Kostenposition](https://www.bo4e.de/dokumentation/komponenten/com-kostenposition)
  */
 data class Kostenposition(
     val positionstitel: String,

@@ -6,7 +6,7 @@ package openenwi.bo4e.lib.com
  *
  * eröffentlicht am 12. Dezember 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-aufabschlagproort"
+ * @see [COM AufAbschlagProOrt](https://www.bo4e.de/dokumentation/komponenten/com-aufabschlagproort)
  *
  * @property plz Die Postleitzahl des Ortes für den der Aufschlag gilt.
  * @property ort Der Ort für den der Aufschlag gilt.

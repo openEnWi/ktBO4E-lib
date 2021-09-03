@@ -11,7 +11,7 @@ import openenwi.bo4e.lib.enum.*
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgangkompakt"
+ * @see [BO Lastgangkompakt](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgangkompakt")
  */
 data class Lastgangkompakt(
     val sparte: Sparte,

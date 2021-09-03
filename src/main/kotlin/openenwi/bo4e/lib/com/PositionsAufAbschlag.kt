@@ -12,7 +12,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 11. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-positionsaufabschlag"
+ * @see [COM PositionsAufAbschlag](https://www.bo4e.de/dokumentation/komponenten/com-positionsaufabschlag)
  */
 data class PositionsAufAbschlag(
     val bezeichnung: String,

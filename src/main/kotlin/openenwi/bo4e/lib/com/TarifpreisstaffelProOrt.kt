@@ -7,7 +7,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 12. Dezember 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tarifpreisstaffelproort"
+ * @see [COM TarifpreisstaffelProOrt](https://www.bo4e.de/dokumentation/komponenten/com-tarifpreisstaffelproort)
  */
 data class TarifpreisstaffelProOrt(
     val arbeitspreis: BigDecimal,

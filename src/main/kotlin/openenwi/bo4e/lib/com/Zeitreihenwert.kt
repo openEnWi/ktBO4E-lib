@@ -10,7 +10,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-zeitreihenwert"
+ * @see [COM Zeitreihenwert](https://www.bo4e.de/dokumentation/komponenten/com-zeitreihenwert)
  * @see Zeitreihenwertkompakt
  */
 data class Zeitreihenwert(

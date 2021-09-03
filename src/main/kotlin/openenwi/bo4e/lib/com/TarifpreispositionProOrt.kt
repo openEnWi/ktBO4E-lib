@@ -5,7 +5,7 @@ package openenwi.bo4e.lib.com
  *
  * veröffentlicht am 12. Dezember 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tarifpreispositionproort"
+ * @see [COM TarifpreispositionProOrt](https://www.bo4e.de/dokumentation/komponenten/com-tarifpreispositionproort)
  */
 data class TarifpreispositionProOrt(
     val plz:Int,

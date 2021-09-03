@@ -7,7 +7,7 @@ import openenwi.bo4e.lib.enum.Themengebiet
  *
  * veröffentlicht am 31. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-zustandigkeit"
+ * @see [COM Zustaendigkeit](https://www.bo4e.de/dokumentation/komponenten/com-zustandigkeit)
  */
 data class Zustaendigkeit(
     val jobtitel: String?,

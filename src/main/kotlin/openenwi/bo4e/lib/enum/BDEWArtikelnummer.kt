@@ -2,6 +2,8 @@ package openenwi.bo4e.lib.enum
 
 /**
  * veröffentlicht am 11. April 2018
+ *
+ * @see [ENUM BDEWArtikelnummer](https://www.bo4e.de/dokumentation/enumerations/enum-bdewartikelnummer)
  */
 enum class BDEWArtikelnummer(val bdewArtikelnummer: String, val beschreibung: String) {
     LEISTUNG("9990001000053", "Leistung"),

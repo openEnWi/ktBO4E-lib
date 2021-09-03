@@ -9,5 +9,7 @@ package openenwi.bo4e.lib.com
  * um diese bei SAP-Aufrufen als Parameter mitgeben zu können.
  *
  * veröffentlicht am 10. Oktober 2020
+ *
+ * @see [COM ExterneReferenz](https://www.bo4e.de/dokumentation/komponenten/com-externereferenz)
  */
 data class ExterneReferenz(val exRefName: String, val exRefWert: String)

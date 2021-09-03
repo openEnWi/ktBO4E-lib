@@ -5,7 +5,7 @@ package openenwi.bo4e.lib.com
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-geraet"
+ * @see [COM Geraet](https://www.bo4e.de/dokumentation/komponenten/com-geraet)
  */
 data class Geraet(
     val geraetenummer: String?,

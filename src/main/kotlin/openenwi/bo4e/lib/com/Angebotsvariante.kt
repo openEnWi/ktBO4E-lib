@@ -8,6 +8,8 @@ import java.time.ZonedDateTime
  * Führt die verschiedenen Ausprägungen der Angebotsberechnung auf.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [COM Angebotsvariante](https://www.bo4e.de/dokumentation/komponenten/com-angebotsvariante)
  */
 data class Angebotsvariante(
     val angebotsstatus: Angebotsstatus,

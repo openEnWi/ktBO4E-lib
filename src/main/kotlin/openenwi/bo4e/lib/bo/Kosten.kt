@@ -12,7 +12,7 @@ import openenwi.bo4e.lib.enum.Kostenklasse
  *
  * veröffentlicht am 28. Februar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-kosten"
+ * @see [BO Kosten](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-kosten)
  */
 data class Kosten(
     val kostenklasse: Kostenklasse,

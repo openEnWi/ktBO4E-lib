@@ -15,7 +15,7 @@ import java.time.LocalDateTime
  *
  * veröffentlicht am 05. September 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-vertrag"
+ * @see [BO Vertrag](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-vertrag)
  */
 data class Vertrag(
     val vertragsnummer: String,

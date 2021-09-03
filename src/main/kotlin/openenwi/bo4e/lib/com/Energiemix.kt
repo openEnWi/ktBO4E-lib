@@ -10,7 +10,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-energiemix"
+ * @see [COM Energiemix](https://www.bo4e.de/dokumentation/komponenten/com-energiemix)
  */
 data class Energiemix(
     val energiemixnummer: Int,

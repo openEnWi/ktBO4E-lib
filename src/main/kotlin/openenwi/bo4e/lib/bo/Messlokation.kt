@@ -10,7 +10,7 @@ import openenwi.bo4e.lib.enum.Sparte
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-messlokation"
+ * @see [BO Messlokation](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-messlokation)
  */
 data class Messlokation(
     val messlokationsId: String,

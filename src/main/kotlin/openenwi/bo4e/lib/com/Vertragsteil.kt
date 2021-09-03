@@ -9,7 +9,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 05. September 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-vertragsteil"
+ * @see [COM Vertragsteil](https://www.bo4e.de/dokumentation/komponenten/com-vertragsteil)
  */
 data class Vertragsteil(
     val vertragsteilbeginn: ZonedDateTime,

@@ -14,7 +14,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-angebot"
+ * @see [BO Angebot](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-angebot)
  */
 data class Angebot(
     val angebotsnummer: String,

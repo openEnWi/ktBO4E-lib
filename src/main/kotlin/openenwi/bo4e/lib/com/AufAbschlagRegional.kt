@@ -12,6 +12,8 @@ import openenwi.bo4e.lib.enum.Waehrungseinheit
  * die sich durch die Auswahl eines Auf- oder Abschlags ergeben.
  *
  * veröffentlicht am 12. Dezember 2018
+ *
+ * @see [COM AufAbschlagRegional](https://www.bo4e.de/dokumentation/komponenten/com-aufabschlagregional)
  */
 data class AufAbschlagRegional(
     val bezeichnung: String,

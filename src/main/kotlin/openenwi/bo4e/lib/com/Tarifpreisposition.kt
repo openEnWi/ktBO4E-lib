@@ -9,7 +9,7 @@ import openenwi.bo4e.lib.enum.Waehrungseinheit
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tarifpreisposition"
+ * @see [COM Tarifpreisposition](https://www.bo4e.de/dokumentation/komponenten/com-tarifpreisposition)
  */
 data class Tarifpreisposition(
     val preistyp: Preistyp,

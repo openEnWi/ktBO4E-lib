@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Über dieses ENUM kann eine thematische Zuordnung, beispielsweise eines Ansprechpartners, vorgenommen werden.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [ENUM Themengebiet](https://www.bo4e.de/dokumentation/enumerations/enum-zustaendigkeit)
  */
 enum class Themengebiet(val beschreibung: String) {
     ALLGEMEINER_INFORMATIONSAUSTAUSCH("Allgemeiner Informationsaustausch"),

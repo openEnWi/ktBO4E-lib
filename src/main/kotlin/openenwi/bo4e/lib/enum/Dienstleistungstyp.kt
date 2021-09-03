@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung möglicher abzurechnender Dienstleistungen.
  *
  * veröffentlicht am 18. April 2018
+ *
+ * @see [ENUM Dienstleistungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-dienstleistungstyp)
  */
 enum class Dienstleistungstyp(val beschreibung: String) {
     DATENBEREITSTELLUNG_TAEGLICH("Datenbereitstellung täglich"),

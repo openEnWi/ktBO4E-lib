@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Zertifikate für Ökostrom von verschiedenen Herausgebern.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Oekozertifikat](https://www.bo4e.de/dokumentation/enumerations/enum-oekozertifikat)
  */
 enum class Oekozertifikat(val beschreibung: String) {
     CMS_EE01("CMS Standard EEO1"),

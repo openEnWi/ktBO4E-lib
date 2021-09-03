@@ -10,7 +10,7 @@ import java.time.ZonedDateTime
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-verbrauch"
+ * @see [COM Verbrauch](https://www.bo4e.de/dokumentation/komponenten/com-verbrauch)
  */
 data class Verbrauch(
     val startdatum: ZonedDateTime,

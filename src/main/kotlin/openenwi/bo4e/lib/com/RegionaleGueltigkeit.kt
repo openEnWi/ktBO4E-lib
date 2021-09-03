@@ -8,7 +8,7 @@ import openenwi.bo4e.lib.enum.Gueltigkeitstyp
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-regionalegueltigkeit"
+ * @see [COM RegionaleGueltigkeit](https://www.bo4e.de/dokumentation/komponenten/com-regionalegueltigkeit)
  */
 data class RegionaleGueltigkeit(
     val gueltigkeitstyp: Gueltigkeitstyp,

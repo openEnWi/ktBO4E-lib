@@ -9,7 +9,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-zeitreihenwertkompakt"
+ * @see [COM Zeitreihenwertkompakt](https://www.bo4e.de/dokumentation/komponenten/com-zeitreihenwertkompakt)
  */
 data class Zeitreihenwertkompakt(
     val wert: BigDecimal,

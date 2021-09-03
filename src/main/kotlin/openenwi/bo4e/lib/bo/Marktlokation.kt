@@ -6,6 +6,13 @@ import openenwi.bo4e.lib.com.Katasteradresse
 import openenwi.bo4e.lib.com.Messlokationszuordnung
 import openenwi.bo4e.lib.enum.*
 
+/**
+ * Objekt zur Aufnahme der Informationen zu einer Marktlokation
+ *
+ * veröffentlicht am 17. Januar 2018
+ *
+ * @see [BO Marktlokation](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-marktlokation)
+ */
 data class Marktlokation(
     val marktlokationsId: String,
     val sparte: Sparte,

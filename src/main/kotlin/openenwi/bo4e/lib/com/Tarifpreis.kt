@@ -9,7 +9,7 @@ import java.math.BigDecimal
 /**
  * veröffentlicht am 26. Juni 2019
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-tarifpreis"
+ * @see [COM Tarifpreis](https://www.bo4e.de/dokumentation/komponenten/com-tarifpreis)
  * @see Preis
  */
 data class Tarifpreis(

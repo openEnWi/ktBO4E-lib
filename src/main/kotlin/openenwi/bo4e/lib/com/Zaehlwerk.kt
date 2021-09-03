@@ -9,7 +9,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-zahlwerk"
+ * @see [COM Zaehlwerk](https://www.bo4e.de/dokumentation/komponenten/com-zahlwerk)
  */
 data class Zaehlwerk(
     val zaehlwerkId: String,

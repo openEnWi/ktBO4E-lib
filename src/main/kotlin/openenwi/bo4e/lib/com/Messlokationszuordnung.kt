@@ -10,6 +10,8 @@ import java.time.ZonedDateTime
  * mit der die Messlokation zum Verbrauch der Marklokation beiträgt.
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [COM Messlokationszuordnung](https://www.bo4e.de/dokumentation/komponenten/com-messlokationszuordnung)
  */
 data class Messlokationszuordnung(
     val messlokationsId: String,

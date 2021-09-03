@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung der verschiedenen Berechnungsmethoden für ein Preisblatt.
  *
  * veröffentlicht am 11. April 2018
+ *
+ * @see [ENUM Kalkulationsmethode](https://www.bo4e.de/dokumentation/enumerations/enum-kalkulationsmethode)
  */
 enum class Kalkulationsmethode(val beschreibung: String) {
     STUFEN(

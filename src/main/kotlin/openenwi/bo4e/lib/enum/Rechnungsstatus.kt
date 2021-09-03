@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Abbildung verschiedener Zustände, die im Rahmen der Rechnungsbearbeitung durchlaufen werden.
  *
  * veröffentlicht am 06. Juni 2018
+ *
+ * @see [ENUM Rechnungsstatus](https://www.bo4e.de/dokumentation/enumerations/enum-rechnungsstatus)
  */
 enum class Rechnungsstatus(val beschreibung: String) {
     UNGEPRUEFT("Eine Rechnung vom Lieferanten an einen Endkunden über die Lieferung von Energie."),

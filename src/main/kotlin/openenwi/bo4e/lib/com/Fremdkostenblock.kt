@@ -5,7 +5,7 @@ package openenwi.bo4e.lib.com
  *
  * veröffentlicht am 03. Juli 2019
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-fremdkostenblock"
+ * @see [COM Fremdkostenblock](https://www.bo4e.de/dokumentation/komponenten/com-fremdkostenblock)
  */
 data class Fremdkostenblock(
     val kostenblockbezeichnung: String,

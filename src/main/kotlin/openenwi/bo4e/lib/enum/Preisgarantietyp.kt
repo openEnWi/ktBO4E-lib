@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aufzählung der Möglichkeiten für die Vergabe von Preisgarantien
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Preisgarantietyp](https://www.bo4e.de/dokumentation/enumerations/enum-preisgarantietyp)
  */
 enum class Preisgarantietyp(val beschreibung: String) {
     ALLE_PREISBESTANDTEILE_BRUTTO("Der Versorger gewährt eine Preisgarantie auf alle Preisbestandteile"),

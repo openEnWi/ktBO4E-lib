@@ -7,7 +7,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 11. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-preisstaffel"
+ * @see [COM Preisstaffel](https://www.bo4e.de/dokumentation/komponenten/com-preisstaffel)
  */
 data class Preisstaffel(
     val einheitspreis: BigDecimal,

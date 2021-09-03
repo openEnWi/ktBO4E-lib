@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aufzählung von zusätzlichen Informationen zum Status, beispielsweise in Lastgängen oder Zählwerkständen.
  *
  * veröffentlicht am 07. Oktober 2020
+ *
+ * @see [ENUM Messwertstatuszusatz](https://www.bo4e.de/dokumentation/enumerations/enum-messwertstatuszusatz)
  */
 enum class Messwertstatuszusatz(val beschreibung: String) {
     Z84_LEERSTAND("Leerstand"),

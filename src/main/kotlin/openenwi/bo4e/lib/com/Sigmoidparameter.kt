@@ -5,7 +5,7 @@ import java.math.BigDecimal
 /**
  * veröffentlicht am 11. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-sigmoidparameter"
+ * @see [COM Sigmoidparameter](https://www.bo4e.de/dokumentation/komponenten/com-sigmoidparameter)
  *
  * @property A Briefmarke Ortsverteilnetz
  * @property B Wendepunkt für die bepreiste Menge

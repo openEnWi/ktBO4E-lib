@@ -7,7 +7,7 @@ import java.math.BigDecimal
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-vertragskonditionen"
+ * @see [COM Vertragskonditionen](https://www.bo4e.de/dokumentation/komponenten/com-vertragskonditionen)
  */
 data class Vertragskonditionen(
     val beschreibung: String?,

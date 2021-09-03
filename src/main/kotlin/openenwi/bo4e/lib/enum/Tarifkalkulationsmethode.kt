@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Aulistung der verschiedenen Berechnungsmethoden für ein Preisblatt.
  *
  * veröffentlicht am 30. Mai 2018
+ *
+ * @see [ENUM Tarifkalkulationsmethode](https://www.bo4e.de/dokumentation/enumerations/enum-tarifkalkulationsmethode)
  */
 enum class Tarifkalkulationsmethode(val beschreibung: String) {
     KEINE("Es wird keine Berechnung durchgeführt, sondern lediglich die Menge mit dem Preis multipliziert."),

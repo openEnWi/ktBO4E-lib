@@ -7,7 +7,7 @@ import openenwi.bo4e.lib.enum.Tarifregionskriterium
  *
  * veröffentlicht am 29. August 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-kriteriumwert"
+ * @see [COM KriteriumWert](https://www.bo4e.de/dokumentation/komponenten/com-kriteriumwert)
  */
 data class KriteriumWert(
     val kriterium: Tarifregionskriterium,

@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Klassifizierung der Kriterien für eine regionale Eingrenzung.
  *
  * veröffentlicht am 22. August 2018
+ *
+ * @see [ENUM Regionskriteriumtyp](https://www.bo4e.de/dokumentation/enumerations/enum-regionskriteriumtyp)
  */
 enum class Regionskriteriumtyp(val beschreibung: String) {
     BUNDESLANDKENNZIFFER("offizielle Bundeslandkennziffer"),

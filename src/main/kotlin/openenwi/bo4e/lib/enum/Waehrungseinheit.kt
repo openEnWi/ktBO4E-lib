@@ -6,6 +6,8 @@ package openenwi.bo4e.lib.enum
  * Z.B. 23 ct / kWh oder 50 EUR / Jahr
  *
  * veröffentlicht am 17. Januar 2018
+ *
+ * @see [ENUM Waehrungseinheit](https://www.bo4e.de/dokumentation/enumerations/enum-waehrungseinheit)
  */
 enum class Waehrungseinheit(val beschreibung: String) {
     EUR("Euro"),

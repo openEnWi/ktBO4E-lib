@@ -9,7 +9,7 @@ import openenwi.bo4e.lib.enum.Lokationstyp
  *
  * veröffentlicht am 17. Januar 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-energiemenge"
+ * @see [BO Energiemenge](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-energiemenge)
  */
 data class Energiemenge(
     val lokationsId: String,

@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Zur Abbildung von Messgrössen und zur Verwendung in energiewirtschaftlichen Berechnungen.
  *
  * veröffentlicht am 11. April 2018
+ *
+ * @see [ENUM Bemessungsgroesse](https://www.bo4e.de/dokumentation/enumerations/enum-bemessungsgroesse)
  */
 enum class Bemessungsgroesse(val beschreibung: String) {
     WIRKARBEIT_EL("elektrische Wirkarbeit"),

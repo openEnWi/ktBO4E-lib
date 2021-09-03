@@ -12,7 +12,7 @@ import java.time.LocalDate
  *
  * veröffentlicht am 06. Juni 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-rechnungsposition"
+ * @see [COM Rechnungsposition](https://www.bo4e.de/dokumentation/komponenten/com-rechnungsposition)
  */
 data class Rechnungsposition(
     val positionsnummer: BigDecimal,

@@ -7,6 +7,8 @@ import openenwi.bo4e.lib.enum.Sparte.STROM
  * Kundengruppe für eine Marktlokation (orientiert sich an den Standard-Lastprofilen).
  *
  * veröffentlicht am 11. April 2018
+ *
+ * @see [ENUM Kundengruppe](https://www.bo4e.de/dokumentation/enumerations/enum-kundengruppe)
  */
 enum class Kundengruppe(val beschreibung: String, val sparten: Set<Sparte>) {
     RLM("Kunde mit registrierender Leistungsmessung (kein SLP)", setOf(STROM, GAS)),

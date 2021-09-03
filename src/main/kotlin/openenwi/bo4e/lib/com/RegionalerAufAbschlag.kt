@@ -13,7 +13,7 @@ import openenwi.bo4e.lib.enum.Waehrungseinheit
  *
  * veröffentlicht am 30. Mai 2018
  *
- * @see "https://www.bo4e.de/dokumentation/komponenten/com-regionaleraufabschlag"
+ * @see [COM RegionalerAufAbschlag](https://www.bo4e.de/dokumentation/komponenten/com-regionaleraufabschlag)
  */
 data class RegionalerAufAbschlag(
     val bezeichnung: String,

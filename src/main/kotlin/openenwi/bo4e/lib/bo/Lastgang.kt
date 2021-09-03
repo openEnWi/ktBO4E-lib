@@ -12,7 +12,7 @@ import openenwi.bo4e.lib.enum.Sparte
  *
  * veröffentlicht am 07. Oktober 2020
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgang"
+ * @see [BO Lastgang](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgang)
  */
 data class Lastgang(
     val sparte: Sparte,

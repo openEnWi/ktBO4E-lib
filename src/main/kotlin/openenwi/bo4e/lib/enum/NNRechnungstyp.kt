@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Abbildung verschiedener in der INVOIC angegebenen Rechnungstypen.
  *
  * veröffentlicht am 06. Juni 2018
+ *
+ * @see [ENUM NNRechnungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-nnrechnungstyp)
  */
 enum class NNRechnungstyp(val beschreibung: String) {
     ABSCHLUSSRECHNUNG("Abschlussrechnung"),

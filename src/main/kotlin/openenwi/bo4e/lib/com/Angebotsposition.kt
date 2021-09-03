@@ -8,6 +8,8 @@ package openenwi.bo4e.lib.com
  * Positionsmenge: 4000 kWh
  * Positionspreis: 24,56 ct/kWh
  * Positionskosten: 982,40 €
+ *
+ * @see [COM Angebotsposition](https://www.bo4e.de/dokumentation/komponenten/com-angebotsposition)
  */
 data class Angebotsposition(
     val positionsbezeichnung: String,

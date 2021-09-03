@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Zur Kennzeichnung verschiedener Steuersätze und Verfahren.
  *
  * veröffentlicht am 06. Juni 2018
+ *
+ * @see [ENUM Steuerkennzeichen](https://www.bo4e.de/dokumentation/enumerations/enum-steuerkennzeichen)
  */
 enum class Steuerkennzeichen(val beschreibung: String) {
     UST_0("Keine Umsatzsteuer, bzw. nicht steuerbar."),

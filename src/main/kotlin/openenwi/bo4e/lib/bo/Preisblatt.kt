@@ -12,7 +12,7 @@ import openenwi.bo4e.lib.enum.Sparte
  *
  * veröffentlicht am 11. April 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblatt"
+ * @see [BO Preisblatt](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblatt)
  */
 data class Preisblatt(
     val bezeichnung: String,

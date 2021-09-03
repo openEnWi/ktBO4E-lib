@@ -4,6 +4,8 @@ package openenwi.bo4e.lib.enum
  * Auflistung möglicher abzurechnender Gerätetypen.
  *
  * veröffentlicht am 18. April 2018
+ *
+ * @see [ENUM Geraetemerkmal](https://www.bo4e.de/dokumentation/enumerations/enum-geraetemerkmal)
  */
 enum class Geraetemerkmal(val beschreibung: String) {
     EINTARIF("Eintarifzähler"),
