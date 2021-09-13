@@ -12,6 +12,7 @@ import openenwi.bo4e.lib.enum.*
  * @see [BO Zeitreihe](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-zeitreihe)
  */
 data class Zeitreihe(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.ZEITREIHE),
     val bezeichnung: String,
     val beschreibung: String?,
     val version: String?,
@@ -21,4 +22,4 @@ data class Zeitreihe(
     val einheit: Mengeneinheit,
     val wertherkunft: Wertermittlungsverfahren?,
     val werte: Set<Zeitreihenwert>
-) : Geschaeftsobjekt(boTyp = BOTyp.ZEITREIHE)
+)

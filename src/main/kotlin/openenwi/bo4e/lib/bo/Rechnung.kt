@@ -18,6 +18,7 @@ import java.time.LocalDate
  * @see [BO Rechnung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-rechnung)
  */
 data class Rechnung(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.RECHNUNG),
     val rechnungstitel: String?,
     val rechnungsstatus: Rechnungsstatus?,
     val storno: Boolean,
@@ -37,4 +38,4 @@ data class Rechnung(
     val zuzahlen: Betrag,
     val steuerbetraege: Set<Steuerbetrag>,
     val rechnungspositionen: List<Rechnungsposition>
-) : Geschaeftsobjekt(boTyp = BOTyp.RECHNUNG)
+)

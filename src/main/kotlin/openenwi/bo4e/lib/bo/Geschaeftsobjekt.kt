@@ -10,7 +10,7 @@ import openenwi.bo4e.lib.enum.BOTyp
  * Version 1.1
  * veröffentlicht am 10. Oktober 2020
  */
-abstract class Geschaeftsobjekt(
+data class Geschaeftsobjekt(
     val versionstruktur: Int = 11,
     val boTyp: BOTyp,
     val externeReferenzen: Set<ExterneReferenz> = setOf()

@@ -12,7 +12,8 @@ import openenwi.bo4e.lib.enum.Lokationstyp
  * @see [BO Energiemenge](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-energiemenge)
  */
 data class Energiemenge(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.ENERGIEMENGE),
     val lokationsId: String,
     val lokationstyp: Lokationstyp,
     val energieverbrauch: List<Verbrauch>
-) : Geschaeftsobjekt(boTyp = BOTyp.ENERGIEMENGE)
+)

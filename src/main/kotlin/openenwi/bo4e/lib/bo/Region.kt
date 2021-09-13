@@ -11,7 +11,8 @@ import openenwi.bo4e.lib.enum.BOTyp
  * @see [BO Region](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-region)
  */
 data class Region(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.REGION),
     val bezeichnung: String,
     val positivListe: List<Regionskriterium>,
     val negativListe: List<Regionskriterium>
-) : Geschaeftsobjekt(boTyp = BOTyp.REGION)
+)

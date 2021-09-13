@@ -2,6 +2,7 @@ package openenwi.bo4e.lib.bo
 
 import openenwi.bo4e.lib.com.Preisposition
 import openenwi.bo4e.lib.com.Zeitraum
+import openenwi.bo4e.lib.enum.BOTyp
 import openenwi.bo4e.lib.enum.Preisstatus
 import openenwi.bo4e.lib.enum.Sparte
 
@@ -15,6 +16,7 @@ import openenwi.bo4e.lib.enum.Sparte
  * @see [BO Preisblatt](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblatt)
  */
 data class Preisblatt(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.PREISBLATT),
     val bezeichnung: String,
     val sparte: Sparte,
     val preisstatus: Preisstatus,

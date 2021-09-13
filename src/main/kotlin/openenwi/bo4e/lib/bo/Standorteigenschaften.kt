@@ -13,7 +13,8 @@ import openenwi.bo4e.lib.enum.BOTyp
  * @see [BO Standorteigenschaften](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-standorteigenschaften)
  */
 data class Standorteigenschaften(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.STANDORTEIGENSCHAFTEN),
     val eigenschaftenAllgemein: StandorteigenschaftenAllgemein,
     val eigenschaftenStrom: Set<StandorteigenschaftenStrom>,
     val eigenschaftenGas: Set<StandorteigenschaftenGas>
-) : Geschaeftsobjekt(boTyp = BOTyp.STANDORTEIGENSCHAFTEN)
+)

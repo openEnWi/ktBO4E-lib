@@ -14,6 +14,7 @@ import openenwi.bo4e.lib.enum.*
  * @see [BO Tarifinfo](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-tarifinfo)
  */
 data class Tarifinfo(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.TARIFINFO),
     val bezeichnung: String,
     val anbietername: String,
     val sparte: Sparte,
@@ -26,4 +27,4 @@ data class Tarifinfo(
     val zeitlicheGueltigkeit: Zeitraum?,
     val energiemix: Energiemix?,
     val vertragskonditionen: Vertragskonditionen?
-) : Geschaeftsobjekt(boTyp = BOTyp.TARIFINFO)
+)

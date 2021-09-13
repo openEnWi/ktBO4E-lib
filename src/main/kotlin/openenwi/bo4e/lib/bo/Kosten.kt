@@ -15,8 +15,9 @@ import openenwi.bo4e.lib.enum.Kostenklasse
  * @see [BO Kosten](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-kosten)
  */
 data class Kosten(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.KOSTEN),
     val kostenklasse: Kostenklasse,
     val gueltigkeit: Zeitraum,
     val summeKosten: Betrag?,
     val kostenbloecke: List<Kostenblock>
-): Geschaeftsobjekt(boTyp = BOTyp.KOSTEN)
+)

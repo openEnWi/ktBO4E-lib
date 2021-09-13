@@ -18,6 +18,7 @@ import java.time.LocalDateTime
  * @see [BO Vertrag](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-vertrag)
  */
 data class Vertrag(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.VERTRAG),
     val vertragsnummer: String,
     val beschreibung: String?,
     val vertragsart: Vertragsart,
@@ -31,4 +32,4 @@ data class Vertrag(
     val unterzeichnervp2: Unterschrift,
     val vertragskonditionen: Set<Vertragskonditionen>,
     val vertragsteile: List<Vertragsteil>
-): Geschaeftsobjekt(boTyp = BOTyp.VERTRAG)
+)

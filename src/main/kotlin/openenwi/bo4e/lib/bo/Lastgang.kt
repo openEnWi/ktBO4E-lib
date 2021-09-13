@@ -15,10 +15,11 @@ import openenwi.bo4e.lib.enum.Sparte
  * @see [BO Lastgang](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgang)
  */
 data class Lastgang(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.LASTGANG),
     val sparte: Sparte,
     val version: String?,
     val lokationsId: String,
     val obiskennzahl: String?,
     val messgroesse: Mengeneinheit,
     val werte: List<Zeitreihenwert>
-) : Geschaeftsobjekt(boTyp = BOTyp.LASTGANG)
+)

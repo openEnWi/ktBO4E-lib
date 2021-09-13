@@ -17,6 +17,7 @@ import java.time.ZonedDateTime
  * @see [BO Angebot](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-angebot)
  */
 data class Angebot(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.ANGEBOT),
     val angebotsnummer: String,
     val anfragereferenz: String?,
     val angebotsdatum: ZonedDateTime,
@@ -27,4 +28,4 @@ data class Angebot(
     val unterzeichnerAngebotsnehmer: Ansprechpartner?,
     val unterzeichnerAngebotsgeber: Ansprechpartner?,
     val varianten: Set<Angebotsvariante>
-) : Geschaeftsobjekt(boTyp = BOTyp.ANGEBOT)
+)

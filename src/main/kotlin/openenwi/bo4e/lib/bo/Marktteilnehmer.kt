@@ -12,8 +12,9 @@ import openenwi.bo4e.lib.enum.Rollencodetyp
  * @see [BO Marktteilnehmer](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-marktteilnehmer)
  */
 data class Marktteilnehmer(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(1, BOTyp.MARKTTEILNEHMER),
     val marktrolle: Marktrolle,
     val rollencodenummer: String,
     val rollencodetyp: Rollencodetyp,
     val makoadresse: String
-) : Geschaeftsobjekt(1, BOTyp.MARKTTEILNEHMER)
+)

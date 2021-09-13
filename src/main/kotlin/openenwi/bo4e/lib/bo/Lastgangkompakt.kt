@@ -14,6 +14,7 @@ import openenwi.bo4e.lib.enum.*
  * @see [BO Lastgangkompakt](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-lastgangkompakt")
  */
 data class Lastgangkompakt(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.LASTGANGKOMPAKT),
     val sparte: Sparte,
     val version: String?,
     val lokationsId: String?,
@@ -22,4 +23,4 @@ data class Lastgangkompakt(
     val messgroesse: Mengeneinheit,
     val zeitintervall: Zeitintervall,
     val tagesvektoren: List<Tagesvektor>
-) : Geschaeftsobjekt(boTyp = BOTyp.LASTGANGKOMPAKT)
+)

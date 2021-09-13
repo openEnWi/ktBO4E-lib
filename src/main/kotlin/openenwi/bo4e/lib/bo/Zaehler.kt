@@ -13,6 +13,7 @@ import java.time.ZonedDateTime
  * @see [BO Zaehler](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-zahler)
  */
 data class Zaehler(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.ZAEHLER),
     val zaehlernummer: String,
     val sparte: Sparte,
     val zaehlerauspraegung: Zaehlerauspraegung,
@@ -23,4 +24,4 @@ data class Zaehler(
     val letzteEichung: ZonedDateTime?,
     val zaehlwerke: List<Zaehlwerk>,
     val zaehlerhersteller: Geschaeftspartner
-): Geschaeftsobjekt(boTyp = BOTyp.ZAEHLER)
+)

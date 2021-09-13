@@ -17,6 +17,7 @@ import java.time.ZonedDateTime
  * @see [BO Ausschreibung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ausschreibung)
  */
 data class Ausschreibung(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.AUSSCHREIBUNG),
     val ausschreibungsnummer: String,
     val ausschreibungstyp: Ausschreibungstyp,
     val ausschreibungsstatus: Ausschreibungsstatus,
@@ -28,4 +29,4 @@ data class Ausschreibung(
     val abgabefrist: Zeitraum,
     val bindefrist: Zeitraum,
     val lose: Set<Ausschreibungslos>
-): Geschaeftsobjekt(boTyp = BOTyp.AUSSCHREIBUNG)
+)

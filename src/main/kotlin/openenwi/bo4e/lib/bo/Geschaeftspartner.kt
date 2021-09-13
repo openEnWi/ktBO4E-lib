@@ -19,6 +19,7 @@ import openenwi.bo4e.lib.enum.Kontaktart
  * @see [BO Geschaeftspartner](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-geschaftspartner)
  */
 data class Geschaeftspartner(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.GESCHAEFTSPARTNER),
     val anrede: Anrede?,
     val name1: String,
     val name2: String?,
@@ -33,4 +34,4 @@ data class Geschaeftspartner(
     val website: String?,
     val geschaeftspartnerrolle: Set<Geschaeftspartnerrolle>,
     val partneradresse: Adresse
-): Geschaeftsobjekt(boTyp = BOTyp.GESCHAEFTSPARTNER)
+)

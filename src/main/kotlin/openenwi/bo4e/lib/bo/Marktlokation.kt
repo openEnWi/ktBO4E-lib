@@ -14,6 +14,7 @@ import openenwi.bo4e.lib.enum.*
  * @see [BO Marktlokation](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-marktlokation)
  */
 data class Marktlokation(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.MARKTLOKATION),
     val marktlokationsId: String,
     val sparte: Sparte,
     val energierichtung: Energierichtung,
@@ -32,4 +33,4 @@ data class Marktlokation(
     val geoadresse: Geokoordinaten?,
     val katasterinformation: Katasteradresse?,
     val zugehoerigeMesslokationen: Set<Messlokationszuordnung>
-) : Geschaeftsobjekt(boTyp = BOTyp.MARKTLOKATION)
+)

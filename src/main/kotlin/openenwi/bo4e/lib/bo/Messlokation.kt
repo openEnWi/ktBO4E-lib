@@ -13,6 +13,7 @@ import openenwi.bo4e.lib.enum.Sparte
  * @see [BO Messlokation](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-messlokation)
  */
 data class Messlokation(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.MESSLOKATION),
     val messlokationsId: String,
     val sparte: Sparte,
     val netzebeneMessung: Netzebene?,
@@ -26,4 +27,4 @@ data class Messlokation(
     val katasterinformation: Katasteradresse?,
     val geraete: Set<Hardware>,
     val messdienstleistung: Set<Dienstleistung>
-    ): Geschaeftsobjekt(boTyp = BOTyp.MESSLOKATION)
+)

@@ -15,6 +15,7 @@ import openenwi.bo4e.lib.enum.Titel
  * @see [BO Ansprechpartner](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-ansprechpartner)
  */
 data class Ansprechpartner(
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt(boTyp = BOTyp.ANSPRECHPARTNER),
     val anrede: Anrede?,
     val individuelleAnrede: String?,
     val titel: Titel?,
@@ -26,4 +27,4 @@ data class Ansprechpartner(
     val adresse: Adresse?,
     val rufnummer: Rufnummer?,
     val zustaendigkeit: Zustaendigkeit?
-): Geschaeftsobjekt(boTyp = BOTyp.ANSPRECHPARTNER)
+)
