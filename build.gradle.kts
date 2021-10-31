@@ -6,7 +6,7 @@ plugins {
     application
 }
 
-group = "openenwi.bo4e"
+group = "de.openenwi.bo4e"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -22,6 +22,6 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile>() {
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "11"
 }
