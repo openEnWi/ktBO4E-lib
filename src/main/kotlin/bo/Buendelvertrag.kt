@@ -1,8 +1,10 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Unterschrift
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Vertragsteil
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Vertragsart
 import de.openenwi.bo4e.lib.enum.Vertragsstatus
@@ -14,7 +16,7 @@ import java.time.LocalDateTime
  *
  * veröffentlicht am 05. September 2018
  *
- * @see "https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-buendelvertrag"
+ * @see [BO Buendelvertrag](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-buendelvertrag)
  */
 data class Buendelvertrag(
     val einzelvertraege: List<Vertrag>,
@@ -49,7 +51,8 @@ data class Buendelvertrag(
             unterzeichnervp1,
             unterzeichnervp2,
             vertragskonditionen,
-            vertragsteile
+            vertragsteile,
+            typ(BOTyp.BUENDELVERTRAG)
         )
     )
 }

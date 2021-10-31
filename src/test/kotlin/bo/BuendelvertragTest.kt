@@ -4,6 +4,7 @@ import de.openenwi.bo4e.lib.com.Adresse
 import de.openenwi.bo4e.lib.com.Unterschrift
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Vertragsteil
+import de.openenwi.bo4e.lib.enum.BOTyp.BUENDELVERTRAG
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Vertragsart
 import de.openenwi.bo4e.lib.enum.Vertragsstatus
@@ -32,6 +33,8 @@ internal class BuendelvertragTest {
         )
 
         assertEquals(VNR, buendelvertrag.vertragsnummer)
+        assertEquals(BUENDELVERTRAG, buendelvertrag.boTyp)
+        println(buendelvertrag)
     }
 
     companion object {
