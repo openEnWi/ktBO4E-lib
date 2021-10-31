@@ -3,7 +3,8 @@ package openenwi.bo4e.lib.enum
 /**
  * Auflistung der Erzeugungsarten von Energie.
  *
- * veröffentlicht am 30. Mai 2018
+ * Version 1.1
+ * veröffentlicht am 30. Juni 2021
  *
  * @see [ENUM Erzeugungsart](https://www.bo4e.de/dokumentation/enumerations/enum-erzeugungsart/enum-erzeugungsart-1)
  */
@@ -19,5 +20,7 @@ enum class Erzeugungsart(val beschreibung: String) {
     KOHLE("Kohle"),
     GAS("Erdgas"),
     SONSTIGE("Sonstige"),
-    SONSTIGE_EEG("Sonstige nach EEG")
+    SONSTIGE_EEG("Sonstige nach EEG"),
+    BIOGAS("Biogas"),
+    KLIMANEUTRALES_GAS("Klimaneutrales Erdgas"),
 }

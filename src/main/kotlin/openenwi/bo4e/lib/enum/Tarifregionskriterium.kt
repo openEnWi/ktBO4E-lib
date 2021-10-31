@@ -3,7 +3,8 @@ package openenwi.bo4e.lib.enum
 /**
  * Mit diesen Kriterien können regionale Bereiche definiert werden.
  *
- * veröffentlicht am 30. Mai 2018
+ * Version 1.1
+ * veröffentlicht am 01. Oktober 2021
  *
  * @see [ENUM Tarifregionskriterium](https://www.bo4e.de/dokumentation/enumerations/enum-tarifregionskriterium)
  */
@@ -12,4 +13,5 @@ enum class Tarifregionskriterium(val beschreibung: String) {
     POSTLEITZAHL("Postleitzahl"),
     ORT("Ort"),
     GRUNDVERSORGER_NUMMER("Nummer des Grundversorgers"),
+    REGION("Referenz auf ein BO Region (URL)")
 }

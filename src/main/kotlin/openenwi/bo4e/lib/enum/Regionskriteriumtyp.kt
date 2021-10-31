@@ -3,9 +3,10 @@ package openenwi.bo4e.lib.enum
 /**
  * Klassifizierung der Kriterien für eine regionale Eingrenzung.
  *
- * veröffentlicht am 22. August 2018
+ * Version 1.1
+ * veröffentlicht am 27. September 2021
  *
- * @see [ENUM Regionskriteriumtyp](https://www.bo4e.de/dokumentation/enumerations/enum-regionskriteriumtyp)
+ * @see [ENUM Regionskriteriumtyp](https://www.bo4e.de/dokumentation/enumerations/enum-regionskriteriumtyp/27-9-2021)
  */
 enum class Regionskriteriumtyp(val beschreibung: String) {
     BUNDESLANDKENNZIFFER("offizielle Bundeslandkennziffer"),
@@ -40,4 +41,5 @@ enum class Regionskriteriumtyp(val beschreibung: String) {
     EINWOHNERZAHL_ORT("Einwohnerzahl Ort"),
     KM_UMKREIS("km Umkreis"),
     BUNDESWEIT("Bundesweite Betrachtung"),
+    PLZ_BEREICH("Postleitzahlenbereich"),
 }

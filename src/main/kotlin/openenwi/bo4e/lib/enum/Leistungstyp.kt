@@ -3,7 +3,7 @@ package openenwi.bo4e.lib.enum
 /**
  * Leistungstyp
  *
- * Version 1.2
+ * Version 1.1
  * veröffentlicht am 31. Mai 2021
  *
  * @see [ENUM Leistungstyp](https://www.bo4e.de/dokumentation/enumerations/enum-leistungstyp/31-05-2021)
