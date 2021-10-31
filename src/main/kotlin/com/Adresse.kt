@@ -13,10 +13,10 @@ import de.openenwi.bo4e.lib.enum.Landescode
 data class Adresse(
     val postleitzahl: String,
     val ort: String,
-    val strasse: String?,
-    val hausnummer: String?,
-    val postfach: String?,
-    val adresszusatz: String?,
-    val coErgaenzung: String?,
-    val landescode: Landescode?
+    val strasse: String? = null,
+    val hausnummer: String? = null,
+    val postfach: String? = null,
+    val adresszusatz: String? = null,
+    val coErgaenzung: String? = null,
+    val landescode: Landescode? = null
 )

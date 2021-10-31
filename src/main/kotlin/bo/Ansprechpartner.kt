@@ -26,4 +26,5 @@ data class Ansprechpartner(
     val adresse: Adresse?,
     val rufnummer: Rufnummer?,
     val zustaendigkeit: Zustaendigkeit?,
-)
+    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt.typ(BOTyp.ANSPRECHPARTNER)
+) : Geschaeftsobjekt by geschaeftsobjekt

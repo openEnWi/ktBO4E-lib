@@ -17,16 +17,6 @@ import de.openenwi.bo4e.lib.enum.BOTyp
  * @property boTyp Der Typ des Geschäftsobjektes. Details siehe ENUM BoTyp
  * @property externeReferenzen Hier können IDs anderer Systeme hinterlegt werden (z.B. eine SAP-GP-Nummer)
  */
-/*
-open class Geschaeftsobjekt(
-    val versionstruktur: Int,
-    val boTyp: BOTyp,
-    val externeReferenzen: Set<ExterneReferenz>
-) {
-    constructor(boTyp: BOTyp, externeReferenzen: Set<ExterneReferenz>) : this(VERSION, boTyp, externeReferenzen)
-    constructor(boTyp: BOTyp)  : this(VERSION, boTyp, emptySet())
-}
-*/
 
 interface Geschaeftsobjekt {
     val versionstruktur: Int

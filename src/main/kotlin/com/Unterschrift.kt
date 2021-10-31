@@ -10,7 +10,7 @@ import java.time.ZonedDateTime
  * @see [COM Unterschrift](https://www.bo4e.de/dokumentation/komponenten/com-unterschrift)
  */
 data class Unterschrift(
-    val ort: String?,
-    val datum: ZonedDateTime?,
+    val ort: String? = null,
+    val datum: ZonedDateTime? = null,
     val name: String
 )
