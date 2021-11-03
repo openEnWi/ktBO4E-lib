@@ -3,7 +3,6 @@ package de.openenwi.bo4e.lib.bo
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Tagesvektor
 import de.openenwi.bo4e.lib.com.Zeitintervall
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.LASTGANGKOMPAKT
 import de.openenwi.bo4e.lib.enum.Lokationstyp
 import de.openenwi.bo4e.lib.enum.Mengeneinheit

@@ -4,7 +4,6 @@ import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Kostenblock
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.KOSTEN
 import de.openenwi.bo4e.lib.enum.Kostenklasse
 

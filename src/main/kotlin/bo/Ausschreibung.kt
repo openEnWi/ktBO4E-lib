@@ -6,7 +6,6 @@ import de.openenwi.bo4e.lib.com.Zeitraum
 import de.openenwi.bo4e.lib.enum.Ausschreibungsportal
 import de.openenwi.bo4e.lib.enum.Ausschreibungsstatus
 import de.openenwi.bo4e.lib.enum.Ausschreibungstyp
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.AUSSCHREIBUNG
 import java.time.ZonedDateTime
 

@@ -4,7 +4,6 @@ import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.StandorteigenschaftenAllgemein
 import de.openenwi.bo4e.lib.com.StandorteigenschaftenGas
 import de.openenwi.bo4e.lib.com.StandorteigenschaftenStrom
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.STANDORTEIGENSCHAFTEN
 
 /**

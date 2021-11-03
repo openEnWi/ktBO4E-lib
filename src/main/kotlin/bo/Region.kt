@@ -2,7 +2,6 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Regionskriterium
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.REGION
 
 /**

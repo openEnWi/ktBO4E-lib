@@ -9,6 +9,7 @@ import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Vertragsart
 import de.openenwi.bo4e.lib.enum.Vertragsstatus
 import java.time.LocalDateTime
+import java.util.Collections.emptyList
 
 /**
  * Abbildung eines Bündelvertrags.

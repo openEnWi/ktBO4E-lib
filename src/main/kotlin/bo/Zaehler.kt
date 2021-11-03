@@ -2,8 +2,11 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Zaehlwerk
-import de.openenwi.bo4e.lib.enum.*
 import de.openenwi.bo4e.lib.enum.BOTyp.ZAEHLER
+import de.openenwi.bo4e.lib.enum.Sparte
+import de.openenwi.bo4e.lib.enum.Tarifart
+import de.openenwi.bo4e.lib.enum.Zaehlerauspraegung
+import de.openenwi.bo4e.lib.enum.Zaehlertyp
 import java.math.BigDecimal
 import java.time.ZonedDateTime
 

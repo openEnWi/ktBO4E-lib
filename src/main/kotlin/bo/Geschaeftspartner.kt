@@ -3,7 +3,6 @@ package de.openenwi.bo4e.lib.bo
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Adresse
 import de.openenwi.bo4e.lib.enum.Anrede
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.BOTyp.GESCHAEFTSPARTNER
 import de.openenwi.bo4e.lib.enum.Geschaeftspartnerrolle
 import de.openenwi.bo4e.lib.enum.Kontaktart

@@ -6,7 +6,6 @@ import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Vertragsteil
 import de.openenwi.bo4e.lib.enum.BOTyp.BUENDELVERTRAG
 import de.openenwi.bo4e.lib.enum.Sparte
-import de.openenwi.bo4e.lib.enum.Vertragsart
 import de.openenwi.bo4e.lib.enum.Vertragsstatus
 import java.time.LocalDateTime
 import kotlin.test.Test
