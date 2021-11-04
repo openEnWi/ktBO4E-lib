@@ -5,10 +5,11 @@ plugins {
     id("org.jetbrains.dokka") version "1.5.0"
 
     `java-library`
+    `maven-publish`
 }
 
 group = "de.openenwi.bo4e"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -17,6 +18,28 @@ repositories {
 dependencies {
     dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.5.31")
     testImplementation(kotlin("test"))
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("library") {
+            from(components["kotlin"])
+        }
+    }
+    repositories {
+/*        maven {
+            name = "lokal"
+            url = uri("${buildDir}/publishing-repository")
+        }*/
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/openenwi/ktBO4E-lib")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
 
 tasks.test {
