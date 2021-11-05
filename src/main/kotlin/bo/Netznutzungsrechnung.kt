@@ -4,7 +4,11 @@ import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Rechnungsposition
 import de.openenwi.bo4e.lib.com.Steuerbetrag
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.*
+import de.openenwi.bo4e.lib.enum.NNRechnungsart
+import de.openenwi.bo4e.lib.enum.NNRechnungstyp
+import de.openenwi.bo4e.lib.enum.Rechnungsstatus
+import de.openenwi.bo4e.lib.enum.Rechnungstyp
+import de.openenwi.bo4e.lib.enum.Sparte
 import java.time.LocalDate
 
 /**

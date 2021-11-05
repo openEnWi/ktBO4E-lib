@@ -1,6 +1,13 @@
 package de.openenwi.bo4e.lib.com
 
-import de.openenwi.bo4e.lib.enum.*
+import de.openenwi.bo4e.lib.enum.BDEWArtikelnummer
+import de.openenwi.bo4e.lib.enum.Bemessungsgroesse
+import de.openenwi.bo4e.lib.enum.Kalkulationsmethode
+import de.openenwi.bo4e.lib.enum.Leistungstyp
+import de.openenwi.bo4e.lib.enum.Mengeneinheit
+import de.openenwi.bo4e.lib.enum.Tarifzeit
+import de.openenwi.bo4e.lib.enum.Waehrungseinheit
+import de.openenwi.bo4e.lib.enum.Zeiteinheit
 import java.math.BigDecimal
 
 /**

@@ -2,7 +2,11 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.*
+import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
+import de.openenwi.bo4e.lib.enum.Kundengruppe
+import de.openenwi.bo4e.lib.enum.Netzebene
+import de.openenwi.bo4e.lib.enum.Preisstatus
+import de.openenwi.bo4e.lib.enum.Sparte
 
 /**
  * Die Variante des Preisblattmodells zur Abbildung der Netznutzungspreise.

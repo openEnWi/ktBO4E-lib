@@ -2,8 +2,12 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Zeitreihenwert
-import de.openenwi.bo4e.lib.enum.*
 import de.openenwi.bo4e.lib.enum.BOTyp.ZEITREIHE
+import de.openenwi.bo4e.lib.enum.Medium
+import de.openenwi.bo4e.lib.enum.Mengeneinheit
+import de.openenwi.bo4e.lib.enum.Messart
+import de.openenwi.bo4e.lib.enum.Messgroesse
+import de.openenwi.bo4e.lib.enum.Wertermittlungsverfahren
 
 /**
  * Abbildung einer allgemeinen Zeitreihe mit einem Wertvektor.

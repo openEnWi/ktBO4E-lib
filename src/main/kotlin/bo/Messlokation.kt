@@ -1,7 +1,11 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
-import de.openenwi.bo4e.lib.com.*
+import de.openenwi.bo4e.lib.com.Adresse
+import de.openenwi.bo4e.lib.com.Dienstleistung
+import de.openenwi.bo4e.lib.com.Geokoordinaten
+import de.openenwi.bo4e.lib.com.Hardware
+import de.openenwi.bo4e.lib.com.Katasteradresse
 import de.openenwi.bo4e.lib.enum.BOTyp.MESSLOKATION
 import de.openenwi.bo4e.lib.enum.Netzebene
 import de.openenwi.bo4e.lib.enum.Sparte

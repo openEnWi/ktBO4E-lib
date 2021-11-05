@@ -1,7 +1,18 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.com.*
-import de.openenwi.bo4e.lib.enum.*
+import de.openenwi.bo4e.lib.com.Energiemix
+import de.openenwi.bo4e.lib.com.RegionalePreisgarantie
+import de.openenwi.bo4e.lib.com.RegionaleTarifpreisposition
+import de.openenwi.bo4e.lib.com.RegionalerAufAbschlag
+import de.openenwi.bo4e.lib.com.Tarifberechnungsparameter
+import de.openenwi.bo4e.lib.com.Tarifeinschraenkung
+import de.openenwi.bo4e.lib.com.Vertragskonditionen
+import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.Kundentyp
+import de.openenwi.bo4e.lib.enum.Sparte
+import de.openenwi.bo4e.lib.enum.Tarifart
+import de.openenwi.bo4e.lib.enum.Tarifmerkmal
+import de.openenwi.bo4e.lib.enum.Tariftyp
 import java.time.Instant
 
 /**

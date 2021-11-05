@@ -3,7 +3,11 @@ package de.openenwi.bo4e.lib.bo
 import de.openenwi.bo4e.lib.com.Geraeteeigenschaften
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.*
+import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
+import de.openenwi.bo4e.lib.enum.Dienstleistungstyp
+import de.openenwi.bo4e.lib.enum.Netzebene
+import de.openenwi.bo4e.lib.enum.Preisstatus
+import de.openenwi.bo4e.lib.enum.Sparte
 
 /**
  * Die Variante des Preisblattmodells zur Abbildung der Preise für zusätzliche Hardware.

@@ -4,8 +4,12 @@ import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Energiemix
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.*
 import de.openenwi.bo4e.lib.enum.BOTyp.TARIFINFO
+import de.openenwi.bo4e.lib.enum.Kundentyp
+import de.openenwi.bo4e.lib.enum.Sparte
+import de.openenwi.bo4e.lib.enum.Tarifart
+import de.openenwi.bo4e.lib.enum.Tarifmerkmal
+import de.openenwi.bo4e.lib.enum.Tariftyp
 
 /**
  * Das BO Tarifinfo liefert die Merkmale, die einen Endkundentarif identifizierbar machen.

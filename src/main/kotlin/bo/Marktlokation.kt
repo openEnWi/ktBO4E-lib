@@ -5,8 +5,14 @@ import de.openenwi.bo4e.lib.com.Adresse
 import de.openenwi.bo4e.lib.com.Geokoordinaten
 import de.openenwi.bo4e.lib.com.Katasteradresse
 import de.openenwi.bo4e.lib.com.Messlokationszuordnung
-import de.openenwi.bo4e.lib.enum.*
 import de.openenwi.bo4e.lib.enum.BOTyp.MARKTLOKATION
+import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
+import de.openenwi.bo4e.lib.enum.Energierichtung
+import de.openenwi.bo4e.lib.enum.Gasqualitaet
+import de.openenwi.bo4e.lib.enum.Gebiettyp
+import de.openenwi.bo4e.lib.enum.Netzebene
+import de.openenwi.bo4e.lib.enum.Sparte
+import de.openenwi.bo4e.lib.enum.Verbrauchsart
 
 /**
  * Objekt zur Aufnahme der Informationen zu einer Marktlokation
