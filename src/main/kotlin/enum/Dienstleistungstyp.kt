@@ -32,7 +32,9 @@ enum class Dienstleistungstyp(val beschreibung: String) {
     AUSLESUNG_FERNAUSLESUNG("Auslesung mittels Fernauslesung"),
     ABLESUNG_ZUSAETZLICH_MSB("Ablesung, zusätzlich vom Messstellenbetreiber vorgenommen"),
     ABLESUNG_ZUSAETZLICH_KUNDE("Ablesung SLP, zusätzlich vom Kunden vorgenommen"),
-    AUSLESUNG_FERNAUSLESUNG_ZUSAETZLICH_MSB("Auslesung, mittels Fernauslesung, zusätzlich vom Messstellenbetreiber vorgenommen"),
+    AUSLESUNG_FERNAUSLESUNG_ZUSAETZLICH_MSB(
+        "Auslesung, mittels Fernauslesung, zusätzlich vom Messstellenbetreiber vorgenommen"
+    ),
     AUSLESUNG_MOATLICH_FERNAUSLESUNG("Auslesung monatlich mittels Fernauslesung"),
     AUSLESUNG_STUENDLICH_FERNAUSLESUNG("Auslesung stündlich mittels Fernauslesung"),
     AUSLESUNG_TEMPERATURMENGENUMWERTER("Auslesung Temperaturmengenumwerter"),

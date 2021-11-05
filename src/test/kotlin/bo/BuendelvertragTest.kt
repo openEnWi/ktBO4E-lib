@@ -37,14 +37,14 @@ internal class BuendelvertragTest {
     }
 
     companion object {
-        val ADRESSE = Adresse("98765", "Enerdorf")
-        val UNTERSCHRIFT = Unterschrift(name = "R. Lerdorf")
-        val VNR = "abc123"
-        val BESCHREIBUNG = "desc"
+        private val ADRESSE = Adresse("98765", "Enerdorf")
+        private val UNTERSCHRIFT = Unterschrift(name = "R. Lerdorf")
+        const val VNR = "abc123"
+        const val BESCHREIBUNG = "desc"
         val VERTRAGSTATUS = Vertragsstatus.AKTIV
         val SPARTE = Sparte.STROM
-        val VERTRAGSBEGINN = LocalDateTime.of(2021, 10, 31, 21, 36, 12)
-        val VERTRAGSENDE = LocalDateTime.of(2022, 12, 31, 23, 59, 59)
+        val VERTRAGSBEGINN = LocalDateTime.of(2021, 10, 31, 21, 36, 12)!!
+        val VERTRAGSENDE = LocalDateTime.of(2022, 12, 31, 23, 59, 59)!!
         val VERTRAGSPARTNER1 = Geschaeftspartner(name1 = "vp1", partneradresse = ADRESSE)
         val VERTRAGSPARTNER2 = Geschaeftspartner(name1 = "vp2", partneradresse = ADRESSE)
         val UNTERZEICHNERVP1 = UNTERSCHRIFT

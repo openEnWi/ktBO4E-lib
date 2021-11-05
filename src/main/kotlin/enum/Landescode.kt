@@ -8,7 +8,13 @@ package de.openenwi.bo4e.lib.enum
  * @see [ENUM Landescode](https://www.bo4e.de/dokumentation/enumerations/enum-landescode)
  */
 enum class Landescode(val beschreibung: String, val alpha3Code: String, val countryCode: Int) {
-    AT("Austria", "AUT", 40),
-    DE("Germany", "DEU", 276),
-    CH("Switzerland", "CHE", 756)
+    AT("Austria", "AUT", Landescode.AUT_COUNTRY_CODE),
+    DE("Germany", "DEU", Landescode.DEU_COUNTRY_CODE),
+    CH("Switzerland", "CHE", Landescode.CHE_COUNTRY_CODE);
+
+    companion object {
+        const val AUT_COUNTRY_CODE = 40
+        const val DEU_COUNTRY_CODE = 276
+        const val CHE_COUNTRY_CODE = 756
+    }
 }

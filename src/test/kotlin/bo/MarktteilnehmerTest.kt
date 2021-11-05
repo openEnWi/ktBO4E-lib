@@ -48,8 +48,8 @@ internal class MarktteilnehmerTest {
 
     companion object {
         private val marktrolle: Marktrolle = Marktrolle.LF
-        private val rollencodenummer = "code123"
+        private const val rollencodenummer = "code123"
         private val rollencodetyp: Rollencodetyp = Rollencodetyp.BDEW
-        private val makoadresse = "Mako Adresse"
+        private const val makoadresse = "Mako Adresse"
     }
 }
