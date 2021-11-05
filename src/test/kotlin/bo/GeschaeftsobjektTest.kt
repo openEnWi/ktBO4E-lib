@@ -1,6 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.LibBO4E.Companion.VERSION
+import de.openenwi.bo4e.lib.LibBO4E.VERSION
 import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.enum.BOTyp.VERTRAG
 import kotlin.test.Test
