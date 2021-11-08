@@ -1,6 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.LibBO4E.Companion.VERSION
+import de.openenwi.bo4e.lib.LibBO4E.VERSION
 import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.enum.BOTyp
 
@@ -22,17 +22,10 @@ interface Geschaeftsobjekt {
     val versionstruktur: Int
     val boTyp: BOTyp
     val externeReferenzen: Set<ExterneReferenz>
-
-    companion object {
-        fun typ(boTyp: BOTyp): Geschaeftsobjekt = GeschaeftsobjektImpl(boTyp)
-    }
 }
 
 data class GeschaeftsobjektImpl(
-    override val versionstruktur: Int = VERSION,
+    override val versionstruktur: Int,
     override val boTyp: BOTyp,
-    override val externeReferenzen: Set<ExterneReferenz>
-) : Geschaeftsobjekt {
-    constructor(boTyp: BOTyp, externeReferenzen: Set<ExterneReferenz>) : this(VERSION, boTyp, externeReferenzen)
-    constructor(boTyp: BOTyp) : this(VERSION, boTyp, emptySet())
-}
+    override val externeReferenzen: Set<ExterneReferenz>,
+) : Geschaeftsobjekt
