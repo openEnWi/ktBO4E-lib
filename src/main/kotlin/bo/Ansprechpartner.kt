@@ -4,7 +4,6 @@ import de.openenwi.bo4e.lib.com.Adresse
 import de.openenwi.bo4e.lib.com.Rufnummer
 import de.openenwi.bo4e.lib.com.Zustaendigkeit
 import de.openenwi.bo4e.lib.enum.Anrede
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Titel
 
 /**
@@ -26,5 +25,5 @@ data class Ansprechpartner(
     val adresse: Adresse?,
     val rufnummer: Rufnummer?,
     val zustaendigkeit: Zustaendigkeit?,
-    val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt.typ(BOTyp.ANSPRECHPARTNER)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

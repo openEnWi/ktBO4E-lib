@@ -1,8 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Zaehlwerk
-import de.openenwi.bo4e.lib.enum.BOTyp.ZAEHLER
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Tarifart
 import de.openenwi.bo4e.lib.enum.Zaehlerauspraegung
@@ -28,5 +26,5 @@ data class Zaehler(
     val letzteEichung: ZonedDateTime?,
     val zaehlwerke: List<Zaehlwerk>,
     val zaehlerhersteller: Geschaeftspartner,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(ZAEHLER)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

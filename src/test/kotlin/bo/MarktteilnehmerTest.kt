@@ -1,6 +1,6 @@
 package bo
 
-import de.openenwi.bo4e.lib.LibBO4E.Companion.VERSION
+import de.openenwi.bo4e.lib.LibBO4E.VERSION
 import de.openenwi.bo4e.lib.bo.Marktteilnehmer
 import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Marktrolle
@@ -10,7 +10,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
 internal class MarktteilnehmerTest {
-
+/*
     private val marktteilnehmer: Marktteilnehmer = Marktteilnehmer(
         marktrolle,
         rollencodenummer,
@@ -52,4 +52,6 @@ internal class MarktteilnehmerTest {
         private val rollencodetyp: Rollencodetyp = Rollencodetyp.BDEW
         private const val makoadresse = "Mako Adresse"
     }
+
+ */
 }

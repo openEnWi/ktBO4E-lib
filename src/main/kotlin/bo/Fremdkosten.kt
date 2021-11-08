@@ -1,9 +1,7 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.BOTyp.FREMDKOSTEN
 
 /**
  * Mit diesem BO werden die Fremdkosten, beispielsweise für eine Angebotserstellung
@@ -18,5 +16,5 @@ data class Fremdkosten(
     val gueltigkeit: Zeitraum,
     val summeKosten: Betrag? = null,
     val kostenbloecke: List<Fremdkosten> = emptyList(),
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(FREMDKOSTEN),
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

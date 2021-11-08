@@ -1,8 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Zeitreihenwert
-import de.openenwi.bo4e.lib.enum.BOTyp.LASTGANG
 import de.openenwi.bo4e.lib.enum.Mengeneinheit
 import de.openenwi.bo4e.lib.enum.Sparte
 
@@ -22,5 +20,5 @@ data class Lastgang(
     val obiskennzahl: String?,
     val messgroesse: Mengeneinheit,
     val werte: List<Zeitreihenwert>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(LASTGANG)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

@@ -1,11 +1,9 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Rechnungsposition
 import de.openenwi.bo4e.lib.com.Steuerbetrag
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.BOTyp.RECHNUNG
 import de.openenwi.bo4e.lib.enum.Rechnungsstatus
 import de.openenwi.bo4e.lib.enum.Rechnungstyp
 import java.time.LocalDate
@@ -60,5 +58,5 @@ data class RechnungImpl(
     override val zuzahlen: Betrag,
     override val steuerbetraege: Set<Steuerbetrag>,
     override val rechnungspositionen: List<Rechnungsposition>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(RECHNUNG),
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt, Rechnung

@@ -1,8 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Angebotsvariante
-import de.openenwi.bo4e.lib.enum.BOTyp.ANGEBOT
 import de.openenwi.bo4e.lib.enum.Sparte
 import java.time.ZonedDateTime
 
@@ -28,5 +26,5 @@ data class Angebot(
     val unterzeichnerAngebotsnehmer: Ansprechpartner? = null,
     val unterzeichnerAngebotsgeber: Ansprechpartner? = null,
     val varianten: Set<Angebotsvariante> = emptySet(),
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(ANGEBOT)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

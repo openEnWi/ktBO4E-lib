@@ -3,6 +3,7 @@ package de.openenwi.bo4e.lib.bo
 import de.openenwi.bo4e.lib.com.Geraeteeigenschaften
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
 import de.openenwi.bo4e.lib.enum.Dienstleistungstyp
 import de.openenwi.bo4e.lib.enum.Netzebene
@@ -51,6 +52,7 @@ data class PreisblattMessung(
             herausgeber,
             gueltigkeit,
             preispositionen,
+            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTMESSUNG)
         )
     )
 }

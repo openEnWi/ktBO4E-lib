@@ -2,7 +2,6 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Preisstatus
 import de.openenwi.bo4e.lib.enum.Sparte
 
@@ -31,5 +30,5 @@ data class PreisblattImpl(
     override val herausgeber: Marktteilnehmer?,
     override val gueltigkeit: Zeitraum,
     override val preispositionen: Set<Preisposition>,
-    private val geschaeftsobjekt: Geschaeftsobjekt = Geschaeftsobjekt.typ(BOTyp.PREISBLATT)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt, Preisblatt

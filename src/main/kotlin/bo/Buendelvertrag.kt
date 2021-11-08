@@ -1,6 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Unterschrift
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Vertragsteil
@@ -53,7 +53,7 @@ data class Buendelvertrag(
             unterzeichnervp2,
             vertragskonditionen,
             vertragsteile,
-            typ(BOTyp.BUENDELVERTRAG)
+            GeschaeftsobjektImpl(1, BOTyp.BUENDELVERTRAG, emptySet<ExterneReferenz>()) // TODO
         )
     )
 }

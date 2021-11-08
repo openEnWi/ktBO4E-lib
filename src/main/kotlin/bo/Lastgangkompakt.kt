@@ -1,9 +1,7 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Tagesvektor
 import de.openenwi.bo4e.lib.com.Zeitintervall
-import de.openenwi.bo4e.lib.enum.BOTyp.LASTGANGKOMPAKT
 import de.openenwi.bo4e.lib.enum.Lokationstyp
 import de.openenwi.bo4e.lib.enum.Mengeneinheit
 import de.openenwi.bo4e.lib.enum.Sparte
@@ -26,5 +24,5 @@ data class Lastgangkompakt(
     val messgroesse: Mengeneinheit,
     val zeitintervall: Zeitintervall,
     val tagesvektoren: List<Tagesvektor>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(LASTGANGKOMPAKT)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

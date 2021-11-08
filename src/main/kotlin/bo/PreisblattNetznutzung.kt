@@ -2,6 +2,7 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
 import de.openenwi.bo4e.lib.enum.Kundengruppe
 import de.openenwi.bo4e.lib.enum.Netzebene
@@ -43,6 +44,7 @@ data class PreisblattNetznutzung(
             herausgeber,
             gueltigkeit,
             preispositionen,
+            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTNETZNUTZUNG)
         )
     )
 }

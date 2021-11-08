@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "de.openenwi.bo4e"
-version = "1.0.2-SNAPSHOT"
+version = "1.1.0"
 
 repositories {
     mavenCentral()

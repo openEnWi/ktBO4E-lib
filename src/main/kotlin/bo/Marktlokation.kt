@@ -1,11 +1,9 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Adresse
 import de.openenwi.bo4e.lib.com.Geokoordinaten
 import de.openenwi.bo4e.lib.com.Katasteradresse
 import de.openenwi.bo4e.lib.com.Messlokationszuordnung
-import de.openenwi.bo4e.lib.enum.BOTyp.MARKTLOKATION
 import de.openenwi.bo4e.lib.enum.Bilanzierungsmethode
 import de.openenwi.bo4e.lib.enum.Energierichtung
 import de.openenwi.bo4e.lib.enum.Gasqualitaet
@@ -40,5 +38,5 @@ data class Marktlokation(
     val geoadresse: Geokoordinaten?,
     val katasterinformation: Katasteradresse?,
     val zugehoerigeMesslokationen: Set<Messlokationszuordnung>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(MARKTLOKATION)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

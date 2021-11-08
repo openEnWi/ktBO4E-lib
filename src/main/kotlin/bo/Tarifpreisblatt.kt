@@ -8,6 +8,7 @@ import de.openenwi.bo4e.lib.com.Tarifeinschraenkung
 import de.openenwi.bo4e.lib.com.Tarifpreisposition
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Kundentyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Tarifart
@@ -73,6 +74,7 @@ data class Tarifpreisblatt(
             zeitlicheGueltigkeit,
             energiemix,
             vertragskonditionen,
+            GeschaeftsobjektImpl(1, BOTyp.TARIFPREISBLATT)
         )
     )
 }

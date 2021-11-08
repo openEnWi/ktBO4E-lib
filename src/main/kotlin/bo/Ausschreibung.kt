@@ -1,12 +1,10 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Ausschreibungslos
 import de.openenwi.bo4e.lib.com.Zeitraum
 import de.openenwi.bo4e.lib.enum.Ausschreibungsportal
 import de.openenwi.bo4e.lib.enum.Ausschreibungsstatus
 import de.openenwi.bo4e.lib.enum.Ausschreibungstyp
-import de.openenwi.bo4e.lib.enum.BOTyp.AUSSCHREIBUNG
 import java.time.ZonedDateTime
 
 /**
@@ -29,5 +27,5 @@ data class Ausschreibung(
     val abgabefrist: Zeitraum,
     val bindefrist: Zeitraum,
     val lose: Set<Ausschreibungslos>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(AUSSCHREIBUNG)
+    private val geschaeftsobjekt: Geschaeftsobjekt
 ) : Geschaeftsobjekt by geschaeftsobjekt

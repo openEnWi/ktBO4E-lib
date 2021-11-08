@@ -5,7 +5,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 internal class GeschaeftspartnerTest {
-
+/*
     @Test
     fun testConstruction() {
         val gp = Geschaeftspartner(
@@ -18,7 +18,7 @@ internal class GeschaeftspartnerTest {
 
         assertEquals(NAME, gp.name1)
     }
-
+*/
     companion object {
         const val NAME: String = "GP Name"
     }

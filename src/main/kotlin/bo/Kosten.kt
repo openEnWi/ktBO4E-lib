@@ -1,10 +1,8 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Kostenblock
 import de.openenwi.bo4e.lib.com.Zeitraum
-import de.openenwi.bo4e.lib.enum.BOTyp.KOSTEN
 import de.openenwi.bo4e.lib.enum.Kostenklasse
 
 /**
@@ -20,5 +18,5 @@ data class Kosten(
     val gueltigkeit: Zeitraum,
     val summeKosten: Betrag?,
     val kostenbloecke: List<Kostenblock>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(KOSTEN)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

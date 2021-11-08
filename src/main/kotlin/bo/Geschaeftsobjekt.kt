@@ -1,6 +1,5 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.LibBO4E.VERSION
 import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.enum.BOTyp
 
@@ -27,5 +26,5 @@ interface Geschaeftsobjekt {
 data class GeschaeftsobjektImpl(
     override val versionstruktur: Int,
     override val boTyp: BOTyp,
-    override val externeReferenzen: Set<ExterneReferenz>,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
 ) : Geschaeftsobjekt

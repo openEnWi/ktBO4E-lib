@@ -4,6 +4,7 @@ import de.openenwi.bo4e.lib.com.Betrag
 import de.openenwi.bo4e.lib.com.Rechnungsposition
 import de.openenwi.bo4e.lib.com.Steuerbetrag
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.NNRechnungsart
 import de.openenwi.bo4e.lib.enum.NNRechnungstyp
 import de.openenwi.bo4e.lib.enum.Rechnungsstatus
@@ -84,6 +85,7 @@ data class Netznutzungsrechnung(
             zuzahlen,
             steuerbetraege,
             rechnungspositionen,
+            GeschaeftsobjektImpl(1, BOTyp.NETZNUTZUNGSRECHNUNG)
         )
     )
 }

@@ -1,7 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.LibBO4E.VERSION
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.enum.BOTyp.VERTRAG
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -9,7 +8,7 @@ import kotlin.test.assertEquals
 internal class GeschaeftsobjektTest {
     data class Vertrag(
         val unterzeichner: String,
-        val geschaeftsobjekt: Geschaeftsobjekt = typ(VERTRAG)
+        val geschaeftsobjekt: Geschaeftsobjekt = GeschaeftsobjektImpl(1, VERTRAG),
     ) : Geschaeftsobjekt by geschaeftsobjekt
 
     private val vertrag: Vertrag = Vertrag(NAME)

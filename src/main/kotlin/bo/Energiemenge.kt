@@ -1,8 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Verbrauch
-import de.openenwi.bo4e.lib.enum.BOTyp.ENERGIEMENGE
 import de.openenwi.bo4e.lib.enum.Lokationstyp
 
 /**
@@ -16,5 +14,5 @@ data class Energiemenge(
     val lokationsId: String,
     val lokationstyp: Lokationstyp,
     val energieverbrauch: List<Verbrauch>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(ENERGIEMENGE)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt

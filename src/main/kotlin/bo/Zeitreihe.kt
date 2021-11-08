@@ -1,8 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
-import de.openenwi.bo4e.lib.bo.Geschaeftsobjekt.Companion.typ
 import de.openenwi.bo4e.lib.com.Zeitreihenwert
-import de.openenwi.bo4e.lib.enum.BOTyp.ZEITREIHE
 import de.openenwi.bo4e.lib.enum.Medium
 import de.openenwi.bo4e.lib.enum.Mengeneinheit
 import de.openenwi.bo4e.lib.enum.Messart
@@ -27,5 +25,5 @@ data class Zeitreihe(
     val einheit: Mengeneinheit,
     val wertherkunft: Wertermittlungsverfahren?,
     val werte: Set<Zeitreihenwert>,
-    val geschaeftsobjekt: Geschaeftsobjekt = typ(ZEITREIHE)
+    private val geschaeftsobjekt: Geschaeftsobjekt,
 ) : Geschaeftsobjekt by geschaeftsobjekt
