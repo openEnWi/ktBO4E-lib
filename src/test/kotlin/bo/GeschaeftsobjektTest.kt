@@ -8,7 +8,7 @@ import kotlin.test.assertEquals
 internal class GeschaeftsobjektTest {
     data class Vertrag(
         val unterzeichner: String,
-        val geschaeftsobjekt: Geschaeftsobjekt = GeschaeftsobjektImpl(1, VERTRAG),
+        val geschaeftsobjekt: Geschaeftsobjekt = GeschaeftsobjektImpl(VERSION, VERTRAG),
     ) : Geschaeftsobjekt by geschaeftsobjekt
 
     private val vertrag: Vertrag = Vertrag(NAME)
