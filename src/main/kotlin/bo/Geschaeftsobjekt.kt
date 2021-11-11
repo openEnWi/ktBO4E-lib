@@ -12,19 +12,19 @@ import de.openenwi.bo4e.lib.enum.BOTyp
  *
  * @see [BO Geschaeftsobjekt](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-geschaftsobjekt/10-10-2020)
  *
- * @property versionstruktur Version der BO-Struktur.
+ * @property versionStruktur Version der BO-Struktur.
  * @property boTyp Der Typ des Geschäftsobjektes. Details siehe ENUM BoTyp
  * @property externeReferenzen Hier können IDs anderer Systeme hinterlegt werden (z.B. eine SAP-GP-Nummer)
  */
 
 interface Geschaeftsobjekt {
-    val versionstruktur: Int
+    val versionStruktur: Int
     val boTyp: BOTyp
     val externeReferenzen: Set<ExterneReferenz>
 }
 
 data class GeschaeftsobjektImpl(
-    override val versionstruktur: Int,
+    override val versionStruktur: Int = 1,
     override val boTyp: BOTyp,
     override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
 ) : Geschaeftsobjekt

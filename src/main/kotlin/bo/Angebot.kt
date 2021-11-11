@@ -1,6 +1,8 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Angebotsvariante
+import de.openenwi.bo4e.lib.com.ExterneReferenz
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import java.time.ZonedDateTime
 
@@ -15,16 +17,32 @@ import java.time.ZonedDateTime
  *
  * @see [BO Angebot](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-angebot)
  */
-data class Angebot(
-    val angebotsnummer: String,
-    val anfragereferenz: String? = null,
-    val angebotsdatum: ZonedDateTime,
-    val sparte: Sparte,
-    val bindefrist: ZonedDateTime? = null,
-    val angebotsgeber: Geschaeftspartner,
-    val angebotsnehmer: Geschaeftspartner,
-    val unterzeichnerAngebotsnehmer: Ansprechpartner? = null,
-    val unterzeichnerAngebotsgeber: Ansprechpartner? = null,
-    val varianten: Set<Angebotsvariante> = emptySet(),
-    private val geschaeftsobjekt: Geschaeftsobjekt,
-) : Geschaeftsobjekt by geschaeftsobjekt
+interface Angebot : Geschaeftsobjekt {
+    val angebotsnummer: String
+    val anfragereferenz: String?
+    val angebotsdatum: ZonedDateTime
+    val sparte: Sparte
+    val bindefrist: ZonedDateTime?
+    val angebotsgeber: Geschaeftspartner
+    val angebotsnehmer: Geschaeftspartner
+    val unterzeichnerAngebotsnehmer: Ansprechpartner?
+    val unterzeichnerAngebotsgeber: Ansprechpartner?
+    val varianten: Set<Angebotsvariante>
+}
+
+data class AngebotImpl(
+    override val angebotsnummer: String,
+    override val anfragereferenz: String? = null,
+    override val angebotsdatum: ZonedDateTime,
+    override val sparte: Sparte,
+    override val bindefrist: ZonedDateTime? = null,
+    override val angebotsgeber: Geschaeftspartner,
+    override val angebotsnehmer: Geschaeftspartner,
+    override val unterzeichnerAngebotsnehmer: Ansprechpartner? = null,
+    override val unterzeichnerAngebotsgeber: Ansprechpartner? = null,
+    override val varianten: Set<Angebotsvariante> = emptySet(),
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.ANGEBOT,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Angebot

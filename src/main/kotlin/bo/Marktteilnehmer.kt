@@ -24,57 +24,27 @@ interface Marktteilnehmer : Geschaeftspartner {
 }
 
 data class MarktteilnehmerImpl(
+    override val anrede: Anrede? = null,
+    override val name1: String,
+    override val name2: String? = null,
+    override val name3: String? = null,
+    override val gewerbekennzeichnung: Boolean = false,
+    override val hrnummer: String? = null,
+    override val amtsgericht: String? = null,
+    override val kontaktweg: List<Kontaktart> = emptyList(),
+    override val umsatzsteuerId: String? = null,
+    override val glaeubigerId: String? = null,
+    override val eMailAdresse: String? = null,
+    override val website: String? = null,
+    override val geschaeftspartnerrolle: Set<Geschaeftspartnerrolle> = emptySet(),
+    override val partneradresse: Adresse,
+
     override val marktrolle: Marktrolle,
     override val rollencodenummer: String,
     override val rollencodetyp: Rollencodetyp,
     override val makoadresse: String,
-    private val geschaeftspartner: Geschaeftspartner,
-) : Geschaeftspartner by geschaeftspartner, Marktteilnehmer {
-    constructor(
-        versionstruktur: Int,
-        boTyp: BOTyp,
-        externeReferenzen: Set<ExterneReferenz>,
 
-        anrede: Anrede?,
-        name1: String,
-        name2: String?,
-        name3: String?,
-        gewerbekennzeichnung: Boolean,
-        hrnummer: String?,
-        amtsgericht: String?,
-        kontaktweg: List<Kontaktart>,
-        umsatzsteuerId: String?,
-        glaeubigerId: String?,
-        eMailAdresse: String?,
-        website: String?,
-        geschaeftspartnerrolle: Set<Geschaeftspartnerrolle>,
-        partneradresse: Adresse,
-
-        marktrolle: Marktrolle,
-        rollencodenummer: String,
-        rollencodetyp: Rollencodetyp,
-        makoadresse: String,
-    ) : this(
-        marktrolle, rollencodenummer, rollencodetyp, makoadresse,
-        GeschaeftspartnerImpl(
-            versionstruktur,
-            boTyp,
-            externeReferenzen,
-
-            anrede,
-            name1,
-            name2,
-            name3,
-            gewerbekennzeichnung,
-            hrnummer,
-            amtsgericht,
-            kontaktweg,
-            umsatzsteuerId,
-            glaeubigerId,
-            eMailAdresse,
-            website,
-            geschaeftspartnerrolle,
-            partneradresse,
-        )
-    )
-}
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.MARKTTEILNEHMER,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Marktteilnehmer

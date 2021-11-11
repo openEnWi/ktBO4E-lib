@@ -18,12 +18,12 @@ import de.openenwi.bo4e.lib.enum.Tariftyp
  * @see [BO Tarifkosten](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-tarifkosten)
  */
 data class Tarifkosten(
-    val kosten: Kosten,
+    val kosten: KostenImpl,
 
     private val tarifinfo: Tarifinfo,
 ) : Tarifinfo by tarifinfo {
     constructor(
-        kosten: Kosten,
+        kosten: KostenImpl,
 
         bezeichnung: String,
         anbietername: String,

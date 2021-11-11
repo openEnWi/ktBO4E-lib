@@ -19,41 +19,28 @@ import java.util.Collections.emptyList
  *
  * @see [BO Buendelvertrag](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-buendelvertrag)
  */
-data class Buendelvertrag(
-    val einzelvertraege: List<Vertrag>,
-    private val vertrag: Vertrag,
-) : Vertrag by vertrag {
-    constructor(
-        vertragsnummer: String,
-        beschreibung: String?,
-        vertragstatus: Vertragsstatus,
-        sparte: Sparte,
-        vertragsbeginn: LocalDateTime,
-        vertragsende: LocalDateTime,
-        vertragspartner1: Geschaeftspartner,
-        vertragspartner2: Geschaeftspartner,
-        unterzeichnervp1: Unterschrift,
-        unterzeichnervp2: Unterschrift,
-        vertragskonditionen: Set<Vertragskonditionen>,
-        vertragsteile: List<Vertragsteil>,
-        einzelvertraege: List<Vertrag> = emptyList(),
-    ) : this(
-        einzelvertraege,
-        VertragImpl(
-            vertragsnummer,
-            beschreibung,
-            Vertragsart.BUENDELVERTRAG,
-            vertragstatus,
-            sparte,
-            vertragsbeginn,
-            vertragsende,
-            vertragspartner1,
-            vertragspartner2,
-            unterzeichnervp1,
-            unterzeichnervp2,
-            vertragskonditionen,
-            vertragsteile,
-            GeschaeftsobjektImpl(1, BOTyp.BUENDELVERTRAG, emptySet<ExterneReferenz>()) // TODO
-        )
-    )
+interface Buendelvertrag : Vertrag {
+    val einzelvertraege: List<Vertrag>
 }
+
+data class BuendelvertragImpl(
+    override val einzelvertraege: List<Vertrag>,
+
+    override val vertragsnummer: String,
+    override val beschreibung: String?,
+    override val vertragsart: Vertragsart,
+    override val vertragstatus: Vertragsstatus,
+    override val sparte: Sparte,
+    override val vertragsbeginn: LocalDateTime,
+    override val vertragsende: LocalDateTime,
+    override val vertragspartner1: Geschaeftspartner,
+    override val vertragspartner2: Geschaeftspartner,
+    override val unterzeichnervp1: Unterschrift,
+    override val unterzeichnervp2: Unterschrift,
+    override val vertragskonditionen: Set<Vertragskonditionen>,
+    override val vertragsteile: List<Vertragsteil>,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.BUENDELVERTRAG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Buendelvertrag

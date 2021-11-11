@@ -1,8 +1,10 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Unterschrift
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Vertragsteil
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Vertragsart
 import de.openenwi.bo4e.lib.enum.Vertragsstatus
@@ -46,5 +48,8 @@ data class VertragImpl(
     override val unterzeichnervp2: Unterschrift,
     override val vertragskonditionen: Set<Vertragskonditionen>,
     override val vertragsteile: List<Vertragsteil>,
-    private val geschaeftsobjekt: Geschaeftsobjekt,
-) : Geschaeftsobjekt by geschaeftsobjekt, Vertrag
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.VERTRAG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Vertrag

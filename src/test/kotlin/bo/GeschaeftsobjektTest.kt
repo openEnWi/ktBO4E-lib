@@ -16,7 +16,7 @@ internal class GeschaeftsobjektTest {
     @Test
     fun testGetters() {
         assertEquals(NAME, vertrag.unterzeichner)
-        assertEquals(VERSION, vertrag.versionstruktur)
+        assertEquals(VERSION, vertrag.versionStruktur)
         assertEquals(VERTRAG, vertrag.boTyp)
         assertEquals(emptySet(), vertrag.externeReferenzen)
     }
