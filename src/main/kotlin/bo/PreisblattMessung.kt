@@ -1,5 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Geraeteeigenschaften
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
@@ -18,41 +19,29 @@ import de.openenwi.bo4e.lib.enum.Sparte
  *
  * @see [BO PreisblattMessung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblattmessung)
  */
-data class PreisblattMessung(
-    val bilanzierungsmethode: Bilanzierungsmethode,
-    val messebene: Netzebene,
-    val inklusivedienstleistung: Set<Dienstleistungstyp>,
-    val zaehler: Geraeteeigenschaften,
-    val inklusivegeraete: Set<Geraeteeigenschaften>,
-    private val preisblatt: Preisblatt,
-) : Preisblatt by preisblatt {
-    constructor(
-        bilanzierungsmethode: Bilanzierungsmethode,
-        messebene: Netzebene,
-        inklusivedienstleistung: Set<Dienstleistungstyp>,
-        zaehler: Geraeteeigenschaften,
-        inklusivegeraete: Set<Geraeteeigenschaften>,
-
-        bezeichnung: String,
-        sparte: Sparte,
-        preisstatus: Preisstatus,
-        herausgeber: Marktteilnehmer?,
-        gueltigkeit: Zeitraum,
-        preispositionen: Set<Preisposition>,
-    ) : this(
-        bilanzierungsmethode,
-        messebene,
-        inklusivedienstleistung,
-        zaehler,
-        inklusivegeraete,
-        PreisblattImpl(
-            bezeichnung,
-            sparte,
-            preisstatus,
-            herausgeber,
-            gueltigkeit,
-            preispositionen,
-            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTMESSUNG)
-        )
-    )
+interface PreisblattMessung : Preisblatt {
+    val bilanzierungsmethode: Bilanzierungsmethode
+    val messebene: Netzebene
+    val inklusivedienstleistung: Set<Dienstleistungstyp>
+    val zaehler: Geraeteeigenschaften
+    val inklusivegeraete: Set<Geraeteeigenschaften>
 }
+
+data class PreisblattMessungImpl(
+    override val bilanzierungsmethode: Bilanzierungsmethode,
+    override val messebene: Netzebene,
+    override val inklusivedienstleistung: Set<Dienstleistungstyp>,
+    override val zaehler: Geraeteeigenschaften,
+    override val inklusivegeraete: Set<Geraeteeigenschaften>,
+
+    override val bezeichnung: String,
+    override val sparte: Sparte,
+    override val preisstatus: Preisstatus,
+    override val herausgeber: Marktteilnehmer?,
+    override val gueltigkeit: Zeitraum,
+    override val preispositionen: Set<Preisposition>,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.PREISBLATTMESSUNG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : PreisblattMessung

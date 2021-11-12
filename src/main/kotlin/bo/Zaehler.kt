@@ -1,6 +1,8 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Zaehlwerk
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Tarifart
 import de.openenwi.bo4e.lib.enum.Zaehlerauspraegung
@@ -15,16 +17,32 @@ import java.time.ZonedDateTime
  *
  * @see [BO Zaehler](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-zahler)
  */
-data class Zaehler(
-    val zaehlernummer: String,
-    val sparte: Sparte,
-    val zaehlerauspraegung: Zaehlerauspraegung,
-    val zaehlertyp: Zaehlertyp,
-    val tarifart: Tarifart,
-    val zaehlerkonstante: BigDecimal?,
-    val eichungBis: ZonedDateTime?,
-    val letzteEichung: ZonedDateTime?,
-    val zaehlwerke: List<Zaehlwerk>,
-    val zaehlerhersteller: Geschaeftspartner,
-    private val geschaeftsobjekt: Geschaeftsobjekt,
-) : Geschaeftsobjekt by geschaeftsobjekt
+interface Zaehler : Geschaeftsobjekt {
+    val zaehlernummer: String
+    val sparte: Sparte
+    val zaehlerauspraegung: Zaehlerauspraegung
+    val zaehlertyp: Zaehlertyp
+    val tarifart: Tarifart
+    val zaehlerkonstante: BigDecimal?
+    val eichungBis: ZonedDateTime?
+    val letzteEichung: ZonedDateTime?
+    val zaehlwerke: List<Zaehlwerk>
+    val zaehlerhersteller: Geschaeftspartner
+}
+
+data class ZaehlerImpl(
+    override val zaehlernummer: String,
+    override val sparte: Sparte,
+    override val zaehlerauspraegung: Zaehlerauspraegung,
+    override val zaehlertyp: Zaehlertyp,
+    override val tarifart: Tarifart,
+    override val zaehlerkonstante: BigDecimal?,
+    override val eichungBis: ZonedDateTime?,
+    override val letzteEichung: ZonedDateTime?,
+    override val zaehlwerke: List<Zaehlwerk>,
+    override val zaehlerhersteller: Geschaeftspartner,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.ZAEHLER,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Zaehler

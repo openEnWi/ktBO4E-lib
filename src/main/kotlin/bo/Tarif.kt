@@ -2,6 +2,7 @@ package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.AufAbschlagRegional
 import de.openenwi.bo4e.lib.com.Energiemix
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Preisgarantie
 import de.openenwi.bo4e.lib.com.Tarifberechnungsparameter
 import de.openenwi.bo4e.lib.com.Tarifeinschraenkung
@@ -23,58 +24,37 @@ import java.time.Instant
  *
  * @see [BO Tarif](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-tarifinfo-1)
  */
-data class Tarif(
-    val preisstand: Instant,
-    val tarifeinschraenkungen: Tarifeinschraenkung?,
-    val berechnungsparameter: Tarifberechnungsparameter,
-    val preisgarantie: Preisgarantie?,
-    val tarifAufAbschlaege: AufAbschlagRegional?,
-    val tarifpreise: List<TarifpreispositionProOrt>,
-
-    private val tarifinfo: Tarifinfo,
-) : Tarifinfo by tarifinfo {
-    constructor(
-        preisstand: Instant,
-        tarifeinschraenkungen: Tarifeinschraenkung?,
-        berechnungsparameter: Tarifberechnungsparameter,
-        preisgarantie: Preisgarantie?,
-        tarifAufAbschlaege: AufAbschlagRegional?,
-        tarifpreise: List<TarifpreispositionProOrt>,
-
-        bezeichnung: String,
-        anbietername: String,
-        sparte: Sparte,
-        kundentyp: Kundentyp,
-        tarifart: Tarifart,
-        tariftyp: Tariftyp,
-        tarifmerkmal: Tarifmerkmal,
-        website: String?,
-        anbieter: Marktteilnehmer,
-        zeitlicheGueltigkeit: Zeitraum?,
-        energiemix: Energiemix?,
-        vertragskonditionen: Vertragskonditionen?,
-    ) : this(
-        preisstand,
-        tarifeinschraenkungen,
-        berechnungsparameter,
-        preisgarantie,
-        tarifAufAbschlaege,
-        tarifpreise,
-
-        TarifinfoImpl(
-            bezeichnung,
-            anbietername,
-            sparte,
-            kundentyp,
-            tarifart,
-            tariftyp,
-            tarifmerkmal,
-            website,
-            anbieter,
-            zeitlicheGueltigkeit,
-            energiemix,
-            vertragskonditionen,
-            GeschaeftsobjektImpl(1, BOTyp.TARIFINFO)
-        )
-    )
+interface Tarif : Tarifinfo {
+    val preisstand: Instant
+    val tarifeinschraenkungen: Tarifeinschraenkung?
+    val berechnungsparameter: Tarifberechnungsparameter
+    val preisgarantie: Preisgarantie?
+    val tarifAufAbschlaege: AufAbschlagRegional?
+    val tarifpreise: List<TarifpreispositionProOrt>
 }
+
+data class TarifImpl(
+    override val preisstand: Instant,
+    override val tarifeinschraenkungen: Tarifeinschraenkung?,
+    override val berechnungsparameter: Tarifberechnungsparameter,
+    override val preisgarantie: Preisgarantie?,
+    override val tarifAufAbschlaege: AufAbschlagRegional?,
+    override val tarifpreise: List<TarifpreispositionProOrt>,
+
+    override val bezeichnung: String,
+    override val anbietername: String,
+    override val sparte: Sparte,
+    override val kundentyp: Kundentyp,
+    override val tarifart: Tarifart,
+    override val tariftyp: Tariftyp,
+    override val tarifmerkmal: Tarifmerkmal,
+    override val website: String?,
+    override val anbieter: Marktteilnehmer,
+    override val zeitlicheGueltigkeit: Zeitraum?,
+    override val energiemix: Energiemix?,
+    override val vertragskonditionen: Vertragskonditionen?,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.TARIF,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Tarif

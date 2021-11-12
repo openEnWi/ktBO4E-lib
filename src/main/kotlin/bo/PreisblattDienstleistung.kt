@@ -1,5 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Geraeteeigenschaften
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
@@ -16,37 +17,27 @@ import de.openenwi.bo4e.lib.enum.Sparte
  *
  * @see [BO PreisblattDienstleistung](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblattdienstleistung)
  */
-data class PreisblattDienstleistung(
-    val bilanzierungsmethode: Bilanzierungsmethode,
-    val basisdienstleistung: Dienstleistungstyp,
-    val inklusivedienstleistung: Set<Dienstleistungstyp>,
-    val geraetedetails: Geraeteeigenschaften?,
-    private val preisblatt: Preisblatt,
-) : Preisblatt by preisblatt {
-    constructor(
-        bilanzierungsmethode: Bilanzierungsmethode,
-        basisdienstleistung: Dienstleistungstyp,
-        inklusivedienstleistung: Set<Dienstleistungstyp>,
-        geraetedetails: Geraeteeigenschaften?,
-        bezeichnung: String,
-        sparte: Sparte,
-        preisstatus: Preisstatus,
-        herausgeber: Marktteilnehmer?,
-        gueltigkeit: Zeitraum,
-        preispositionen: Set<Preisposition>,
-    ) : this(
-        bilanzierungsmethode,
-        basisdienstleistung,
-        inklusivedienstleistung,
-        geraetedetails,
-        PreisblattImpl(
-            bezeichnung,
-            sparte,
-            preisstatus,
-            herausgeber,
-            gueltigkeit,
-            preispositionen,
-            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTDIENSTLEISTUNG)
-        )
-    )
+interface PreisblattDienstleistung : Preisblatt {
+    val bilanzierungsmethode: Bilanzierungsmethode
+    val basisdienstleistung: Dienstleistungstyp
+    val inklusivedienstleistung: Set<Dienstleistungstyp>
+    val geraetedetails: Geraeteeigenschaften?
 }
+
+data class PreisblattDienstleistungImpl(
+    override val bilanzierungsmethode: Bilanzierungsmethode,
+    override val basisdienstleistung: Dienstleistungstyp,
+    override val inklusivedienstleistung: Set<Dienstleistungstyp>,
+    override val geraetedetails: Geraeteeigenschaften?,
+
+    override val bezeichnung: String,
+    override val sparte: Sparte,
+    override val preisstatus: Preisstatus,
+    override val herausgeber: Marktteilnehmer?,
+    override val gueltigkeit: Zeitraum,
+    override val preispositionen: Set<Preisposition>,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.PREISBLATTDIENSTLEISTUNG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : PreisblattDienstleistung

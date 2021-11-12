@@ -1,8 +1,10 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Energiemix
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Vertragskonditionen
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
 import de.openenwi.bo4e.lib.enum.Kundentyp
 import de.openenwi.bo4e.lib.enum.Sparte
 import de.openenwi.bo4e.lib.enum.Tarifart
@@ -45,5 +47,8 @@ data class TarifinfoImpl(
     override val zeitlicheGueltigkeit: Zeitraum?,
     override val energiemix: Energiemix?,
     override val vertragskonditionen: Vertragskonditionen?,
-    private val geschaeftsobjekt: Geschaeftsobjekt,
-) : Geschaeftsobjekt by geschaeftsobjekt, Tarifinfo
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.TARIFINFO,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Tarifinfo

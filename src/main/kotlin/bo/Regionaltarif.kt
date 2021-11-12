@@ -1,6 +1,7 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Energiemix
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.RegionalePreisgarantie
 import de.openenwi.bo4e.lib.com.RegionaleTarifpreisposition
 import de.openenwi.bo4e.lib.com.RegionalerAufAbschlag
@@ -21,58 +22,37 @@ import java.time.Instant
  *
  * @see [BO Regionaltarif](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-regionaltarif)
  */
-data class Regionaltarif(
-    val preisstand: Instant,
-    val tarifeinschraenkungen: Tarifeinschraenkung?,
-    val preisgarantien: Set<RegionalePreisgarantie>,
-    val berechnungsparameter: Tarifberechnungsparameter,
-    val tarifAufAbschlaege: RegionalerAufAbschlag?,
-    val tarifpreise: List<RegionaleTarifpreisposition>,
-
-    private val tarifinfo: Tarifinfo,
-) : Tarifinfo by tarifinfo {
-    constructor(
-        preisstand: Instant,
-        tarifeinschraenkungen: Tarifeinschraenkung?,
-        preisgarantien: Set<RegionalePreisgarantie>,
-        berechnungsparameter: Tarifberechnungsparameter,
-        tarifAufAbschlaege: RegionalerAufAbschlag?,
-        tarifpreise: List<RegionaleTarifpreisposition>,
-
-        bezeichnung: String,
-        anbietername: String,
-        sparte: Sparte,
-        kundentyp: Kundentyp,
-        tarifart: Tarifart,
-        tariftyp: Tariftyp,
-        tarifmerkmal: Tarifmerkmal,
-        website: String?,
-        anbieter: Marktteilnehmer,
-        zeitlicheGueltigkeit: Zeitraum?,
-        energiemix: Energiemix?,
-        vertragskonditionen: Vertragskonditionen?,
-    ) : this(
-        preisstand,
-        tarifeinschraenkungen,
-        preisgarantien,
-        berechnungsparameter,
-        tarifAufAbschlaege,
-        tarifpreise,
-
-        TarifinfoImpl(
-            bezeichnung,
-            anbietername,
-            sparte,
-            kundentyp,
-            tarifart,
-            tariftyp,
-            tarifmerkmal,
-            website,
-            anbieter,
-            zeitlicheGueltigkeit,
-            energiemix,
-            vertragskonditionen,
-            GeschaeftsobjektImpl(1, BOTyp.REGIONALTARIF)
-        )
-    )
+interface Regionaltarif : Tarifinfo {
+    val preisstand: Instant
+    val tarifeinschraenkungen: Tarifeinschraenkung?
+    val preisgarantien: Set<RegionalePreisgarantie>
+    val berechnungsparameter: Tarifberechnungsparameter
+    val tarifAufAbschlaege: RegionalerAufAbschlag?
+    val tarifpreise: List<RegionaleTarifpreisposition>
 }
+
+data class RegionaltarifImpl(
+    override val preisstand: Instant,
+    override val tarifeinschraenkungen: Tarifeinschraenkung?,
+    override val preisgarantien: Set<RegionalePreisgarantie>,
+    override val berechnungsparameter: Tarifberechnungsparameter,
+    override val tarifAufAbschlaege: RegionalerAufAbschlag?,
+    override val tarifpreise: List<RegionaleTarifpreisposition>,
+
+    override val bezeichnung: String,
+    override val anbietername: String,
+    override val sparte: Sparte,
+    override val kundentyp: Kundentyp,
+    override val tarifart: Tarifart,
+    override val tariftyp: Tariftyp,
+    override val tarifmerkmal: Tarifmerkmal,
+    override val website: String?,
+    override val anbieter: Marktteilnehmer,
+    override val zeitlicheGueltigkeit: Zeitraum?,
+    override val energiemix: Energiemix?,
+    override val vertragskonditionen: Vertragskonditionen?,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.REGIONALTARIF,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Regionaltarif

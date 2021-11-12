@@ -1,11 +1,16 @@
 package de.openenwi.bo4e.lib.bo
 
 import de.openenwi.bo4e.lib.com.Betrag
+import de.openenwi.bo4e.lib.com.ExterneReferenz
+import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Rechnungsposition
 import de.openenwi.bo4e.lib.com.Steuerbetrag
 import de.openenwi.bo4e.lib.com.Zeitraum
+import de.openenwi.bo4e.lib.enum.BOTyp
+import de.openenwi.bo4e.lib.enum.Preisstatus
 import de.openenwi.bo4e.lib.enum.Rechnungsstatus
 import de.openenwi.bo4e.lib.enum.Rechnungstyp
+import de.openenwi.bo4e.lib.enum.Sparte
 import java.time.LocalDate
 
 /**
@@ -58,5 +63,8 @@ data class RechnungImpl(
     override val zuzahlen: Betrag,
     override val steuerbetraege: Set<Steuerbetrag>,
     override val rechnungspositionen: List<Rechnungsposition>,
-    private val geschaeftsobjekt: Geschaeftsobjekt,
-) : Geschaeftsobjekt by geschaeftsobjekt, Rechnung
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.RECHNUNG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : Rechnung

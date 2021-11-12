@@ -1,5 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
 import de.openenwi.bo4e.lib.enum.BOTyp
@@ -16,35 +17,25 @@ import de.openenwi.bo4e.lib.enum.Sparte
  *
  * @see [BO PreisblattKonzessionsabgabe](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblattkonzessionsabgabe)
  */
-data class PreisblattNetznutzung(
-    val bilanzierungsmethode: Bilanzierungsmethode,
-    val netzebene: Netzebene,
-    val kundengruppe: Kundengruppe,
-    private val preisblatt: Preisblatt,
-) : Preisblatt by preisblatt {
-    constructor(
-        bilanzierungsmethode: Bilanzierungsmethode,
-        netzebene: Netzebene,
-        kundengruppe: Kundengruppe,
-
-        bezeichnung: String,
-        sparte: Sparte,
-        preisstatus: Preisstatus,
-        herausgeber: Marktteilnehmer?,
-        gueltigkeit: Zeitraum,
-        preispositionen: Set<Preisposition>,
-    ) : this(
-        bilanzierungsmethode,
-        netzebene,
-        kundengruppe,
-        PreisblattImpl(
-            bezeichnung,
-            sparte,
-            preisstatus,
-            herausgeber,
-            gueltigkeit,
-            preispositionen,
-            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTNETZNUTZUNG)
-        )
-    )
+interface PreisblattNetznutzung : Preisblatt {
+    val bilanzierungsmethode: Bilanzierungsmethode
+    val netzebene: Netzebene
+    val kundengruppe: Kundengruppe
 }
+
+data class PreisblattNetznutzungImpl(
+    override val bilanzierungsmethode: Bilanzierungsmethode,
+    override val netzebene: Netzebene,
+    override val kundengruppe: Kundengruppe,
+
+    override val bezeichnung: String,
+    override val sparte: Sparte,
+    override val preisstatus: Preisstatus,
+    override val herausgeber: Marktteilnehmer?,
+    override val gueltigkeit: Zeitraum,
+    override val preispositionen: Set<Preisposition>,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.PREISBLATTNETZNUTZUNG,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : PreisblattNetznutzung

@@ -1,5 +1,6 @@
 package de.openenwi.bo4e.lib.bo
 
+import de.openenwi.bo4e.lib.com.ExterneReferenz
 import de.openenwi.bo4e.lib.com.Preisposition
 import de.openenwi.bo4e.lib.com.Zeitraum
 import de.openenwi.bo4e.lib.enum.BOTyp
@@ -14,28 +15,21 @@ import de.openenwi.bo4e.lib.enum.Sparte
  *
  * @see [BO PreisblattKonzessionsabgabe](https://www.bo4e.de/dokumentation/geschaeftsobjekte/bo-preisblattkonzessionsabgabe)
  */
-data class PreisblattKonzessionsabgabe(
-    val kundengruppeKA: KundengruppeKA,
-    private val preisblatt: Preisblatt,
-) : Preisblatt by preisblatt {
-    constructor(
-        kundengruppeKA: KundengruppeKA,
-        bezeichnung: String,
-        sparte: Sparte,
-        preisstatus: Preisstatus,
-        herausgeber: Marktteilnehmer?,
-        gueltigkeit: Zeitraum,
-        preispositionen: Set<Preisposition>,
-    ) : this(
-        kundengruppeKA,
-        PreisblattImpl(
-            bezeichnung,
-            sparte,
-            preisstatus,
-            herausgeber,
-            gueltigkeit,
-            preispositionen,
-            GeschaeftsobjektImpl(1, BOTyp.PREISBLATTKONZESSIONSABGABE)
-        )
-    )
+interface PreisblattKonzessionsabgabe : Preisblatt {
+    val kundengruppeKA: KundengruppeKA
 }
+
+data class PreisblattKonzessionsabgabeImpl(
+    override val kundengruppeKA: KundengruppeKA,
+
+    override val bezeichnung: String,
+    override val sparte: Sparte,
+    override val preisstatus: Preisstatus,
+    override val herausgeber: Marktteilnehmer?,
+    override val gueltigkeit: Zeitraum,
+    override val preispositionen: Set<Preisposition>,
+
+    override val versionStruktur: Int = 1,
+    override val boTyp: BOTyp = BOTyp.PREISBLATTKONZESSIONSABGABE,
+    override val externeReferenzen: Set<ExterneReferenz> = emptySet(),
+) : PreisblattKonzessionsabgabe
