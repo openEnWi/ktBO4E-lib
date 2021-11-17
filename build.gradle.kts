@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "de.openenwi.bo4e"
-version = "1.2.1"
+version = "1.2.2"
 
 repositories {
     mavenCentral()
@@ -19,6 +19,12 @@ dependencies {
     dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.5.31")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.5.31")
 }
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
 
 publishing {
     publications {
