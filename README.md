@@ -5,6 +5,7 @@ Geschäftsobjekte für die Energiewirtschaft ([BO4E](https://www.bo4e.de/))
 - [API Documentation](https://openenwi.github.io/ktBO4E-lib/index.html)
 
 ## Other Noteworthy BO4E Implementations
+- openEnWi: [JS / TypeScript](https://github.com/openEnWi/tsBO4E-lib)
 - Hochfrequenz: [C# / .NET](https://github.com/Hochfrequenz/BO4E-dotnet)
 - Hochfrequenz: [Python](https://github.com/Hochfrequenz/BO4E-python)
 - Hochfrequenz: [Go](https://github.com/Hochfrequenz/go-bo4e)
